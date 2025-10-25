@@ -1,0 +1,36 @@
+[2025-10-24 22:35:00] [INFO] Log session started: C:\Users\coadyj\projects\YE-AutomationV2\Logs\ImportLog_20251024_223500.txt
+[2025-10-24 22:35:00] [INFO] Supervisor Import Started...
+[2025-10-24 22:35:00] [INFO] Target Date: 22/10/2025
+[2025-10-24 22:35:00] [INFO] Excel state set to automation mode.
+[2025-10-24 22:35:00] [INFO] Running Slicing Import Controller...
+[2025-10-24 22:35:00] [INFO] Starting full slicing import...
+[2025-10-24 22:35:00] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 22:35:03] [INFO] Supervisor: Piotr
+[2025-10-24 22:35:03] [SUCCESS] Collected 2 valid rows from 22.10.2025.xlsx
+[2025-10-24 22:35:03] [INFO] Rows collected for Line 1 (Day Shift Yield & Efficiency): 2
+[2025-10-24 22:35:03] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 22:35:04] [INFO] Supervisor: Daniela
+[2025-10-24 22:35:04] [SUCCESS] Collected 8 valid rows from 22.10.2025.xlsx
+[2025-10-24 22:35:04] [INFO] Rows collected for Line 1 (Night Shift Yield & Efficiency): 8
+[2025-10-24 22:35:04] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 22:35:05] [INFO] Supervisor: Andrius
+[2025-10-24 22:35:05] [SUCCESS] Collected 5 valid rows from 22.10.2025.xlsx
+[2025-10-24 22:35:05] [INFO] Rows collected for Line 2 & 3 (Day Shift Yield & Efficiency): 5
+[2025-10-24 22:35:05] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 22:35:06] [INFO] Supervisor: Alexandru
+[2025-10-24 22:35:06] [SUCCESS] Collected 10 valid rows from 22.10.2025.xlsx
+[2025-10-24 22:35:06] [INFO] Rows collected for Line 2 & 3 (Night Shift Yield & Efficiency): 10
+[2025-10-24 22:35:06] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 22:35:08] [INFO] Supervisor: John
+[2025-10-24 22:35:08] [SUCCESS] Collected 12 valid rows from 22.10.2025.xlsx
+[2025-10-24 22:35:08] [INFO] Rows collected for Line 4 (Day Shift Yield & Efficiency): 12
+[2025-10-24 22:35:08] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 22:35:08] [WARN] File not found: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 22:35:08] [INFO] Writing 37 total rows to master...
+[2025-10-24 22:35:26] [ERROR] [2025-10-24 22:35:26] Error 0 in ReadYESheet.WriteToMaster: 
+[2025-10-24 22:35:40] [SUCCESS] All slicing data successfully imported.
+[2025-10-24 22:35:40] [SUCCESS] Slicing import complete.
+[2025-10-24 22:35:40] [INFO] Excel state restored to normal.
+[2025-10-24 22:35:40] [SUCCESS] All imports completed successfully.
+[2025-10-24 22:35:40] [INFO] Total runtime: 00:00:40
+[2025-10-24 22:35:40] [INFO] Log session ended.

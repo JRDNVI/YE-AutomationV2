@@ -1,0 +1,848 @@
+[2025-10-24 21:46:08] [INFO] Log session started: C:\Users\coadyj\projects\YE-AutomationV2\Logs\ImportLog_20251024_214608.txt
+[2025-10-24 21:46:08] [INFO] Supervisor Import Started...
+[2025-10-24 21:46:08] [INFO] Target Date: 22/10/2025
+[2025-10-24 21:46:09] [INFO] Excel state set to automation mode.
+[2025-10-24 21:46:09] [INFO] Running Slicing Import Controller...
+[2025-10-24 21:46:09] [INFO] Slicing Import Started...
+[2025-10-24 21:46:09] [INFO] Processing Line 1
+[2025-10-24 21:46:09] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:46:11] [INFO] Supervisor: Piotr
+[2025-10-24 21:46:11] [INFO] Checking first marker cell: I9 = '408'
+[2025-10-24 21:46:11] [INFO] Reading row 9
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Product Code -> B9 = 10041
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Total Min.Work -> I9 = 408
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Pack Produced -> L9 = 26422
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Nominal weight -> R9 = 3963.3
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Weight to slicer -> S9 = 4135.5
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Slicer Weight -> T9 = 4136.4
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Over Runs Used KG -> U9 = 58.25
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Gripper End KGS -> X9 = 90.5
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Trim KGS -> Z9 = 90
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Dropped Joint KGS -> AB9 = 
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Downtime -> AG9 = 
+[2025-10-24 21:46:11] [INFO] Reading row 10
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Product Code -> B10 = 10042
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Total Min.Work -> I10 = 66.9999999999999
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Pack Produced -> L10 = 5320
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Nominal weight -> R10 = 798
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Weight to slicer -> S10 = 830
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Slicer Weight -> T10 = 832.3
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Over Runs Used KG -> U10 = 9.6
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Gripper End KGS -> X10 = 17.7
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Trim KGS -> Z10 = 16
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Dropped Joint KGS -> AB10 = 
+[2025-10-24 21:46:11] [INFO] Inside Function
+[2025-10-24 21:46:11] [INFO]   Downtime -> AG10 = 
+[2025-10-24 21:46:11] [INFO] Total rows added: 2
+[2025-10-24 21:46:11] [ERROR] [2025-10-24 21:46:11] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:46:11] [ERROR] ReadSupervisorData returned Nothing for Line 1 - Day Shift Yield & Efficiency
+[2025-10-24 21:46:11] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:46:12] [INFO] Supervisor: Daniela
+[2025-10-24 21:46:12] [INFO] Checking first marker cell: I9 = '26.9999999999999'
+[2025-10-24 21:46:12] [INFO] Reading row 9
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B9 = 324396
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I9 = 26.9999999999999
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L9 = 857
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R9 = 171.4
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S9 = 195
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T9 = 198
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U9 = 
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X9 = 7.3
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z9 = 10
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB9 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG9 = 
+[2025-10-24 21:46:12] [INFO] Reading row 10
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B10 = 5302234S
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I10 = 88
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L10 = 3795
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R10 = 759
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S10 = 874.5
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T10 = 878.6
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U10 = 
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X10 = 36.7
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z10 = 67.1
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB10 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG10 = 
+[2025-10-24 21:46:12] [INFO] Reading row 11
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B11 = 5302234U
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I11 = 80
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L11 = 3813
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R11 = 762.6
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S11 = 828.5
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T11 = 836.8
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U11 = 
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X11 = 40.3
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z11 = 17.4
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB11 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG11 = 
+[2025-10-24 21:46:12] [INFO] Reading row 12
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B12 = 63976S
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I12 = 75.0000000000001
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L12 = 4221
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R12 = 1055.25
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S12 = 1094
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T12 = 1093.2
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U12 = 13.5
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X12 = 27.3
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z12 = 17.9
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB12 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG12 = 
+[2025-10-24 21:46:12] [INFO] Reading row 13
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B13 = 63976U
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I13 = 80.0000000000001
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L13 = 4212
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R13 = 1053
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S13 = 1098
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T13 = 1096.9
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U13 = 
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X13 = 20
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z13 = 25.7
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB13 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG13 = 
+[2025-10-24 21:46:12] [INFO] Reading row 14
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B14 = 731366H
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I14 = 19.9999999999999
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L14 = 1221
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R14 = 305.25
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S14 = 310
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T14 = 303.5
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U14 = 21.5
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X14 = 5.4
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z14 = 3
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB14 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG14 = 
+[2025-10-24 21:46:12] [INFO] Reading row 15
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B15 = 731366M
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I15 = 35
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L15 = 1231
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R15 = 307.75
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S15 = 325
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T15 = 325.7
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U15 = 
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X15 = 7.9
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z15 = 14.9
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB15 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG15 = 
+[2025-10-24 21:46:12] [INFO] Reading row 16
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Product Code -> B16 = 80121
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Total Min.Work -> I16 = 84.9999999999999
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Pack Produced -> L16 = 5821
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Nominal weight -> R16 = 756.73
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Weight to slicer -> S16 = 795.5
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Slicer Weight -> T16 = 793
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Over Runs Used KG -> U16 = 
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Gripper End KGS -> X16 = 22.8
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Trim KGS -> Z16 = 14.9
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Dropped Joint KGS -> AB16 = 0
+[2025-10-24 21:46:12] [INFO] Inside Function
+[2025-10-24 21:46:12] [INFO]   Downtime -> AG16 = 
+[2025-10-24 21:46:12] [INFO] Total rows added: 8
+[2025-10-24 21:46:12] [ERROR] ReadSupervisorData returned Nothing for Line 1 - Night Shift Yield & Efficiency
+[2025-10-24 21:46:12] [INFO] Processing Line 2 & 3
+[2025-10-24 21:46:12] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:46:13] [INFO] Supervisor: Andrius
+[2025-10-24 21:46:13] [INFO] Checking first marker cell: I9 = '278'
+[2025-10-24 21:46:13] [INFO] Reading row 9
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Product Code -> B9 = 10042
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Total Min.Work -> I9 = 278
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Pack Produced -> L9 = 21184
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Nominal weight -> R9 = 3177.6
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Weight to slicer -> S9 = 3329
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Slicer Weight -> T9 = 3299.3
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Over Runs Used KG -> U9 = 28.3
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Gripper End KGS -> X9 = 70
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Trim KGS -> Z9 = 88
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Dropped Joint KGS -> AB9 = 
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Downtime -> AG9 = 
+[2025-10-24 21:46:13] [INFO] Reading row 10
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Product Code -> B10 = 6236
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Total Min.Work -> I10 = 44
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Pack Produced -> L10 = 3024
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Nominal weight -> R10 = 604.8
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Weight to slicer -> S10 = 638
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Slicer Weight -> T10 = 631.1
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Over Runs Used KG -> U10 = 1.6
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Gripper End KGS -> X10 = 15.9
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Trim KGS -> Z10 = 13.4
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Dropped Joint KGS -> AB10 = 
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Downtime -> AG10 = 
+[2025-10-24 21:46:13] [INFO] Reading row 11
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Product Code -> B11 = 6237
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Total Min.Work -> I11 = 43
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Pack Produced -> L11 = 3043
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Nominal weight -> R11 = 608.6
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Weight to slicer -> S11 = 645.5
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Slicer Weight -> T11 = 638.8
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Over Runs Used KG -> U11 = 
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Gripper End KGS -> X11 = 16.9
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Trim KGS -> Z11 = 12.4
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Dropped Joint KGS -> AB11 = 
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Downtime -> AG11 = 
+[2025-10-24 21:46:13] [INFO] Reading row 12
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Product Code -> B12 = 5310004S
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Total Min.Work -> I12 = 26.9999999999999
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Pack Produced -> L12 = 1312
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Nominal weight -> R12 = 314.88
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Weight to slicer -> S12 = 328.5
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Slicer Weight -> T12 = 318.2
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Over Runs Used KG -> U12 = 
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Gripper End KGS -> X12 = 9.4
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Trim KGS -> Z12 = 3
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Dropped Joint KGS -> AB12 = 
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Downtime -> AG12 = 
+[2025-10-24 21:46:13] [INFO] Reading row 13
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Product Code -> B13 = 5310004U
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Total Min.Work -> I13 = 28.0000000000001
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Pack Produced -> L13 = 1281
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Nominal weight -> R13 = 307.44
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Weight to slicer -> S13 = 313
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Slicer Weight -> T13 = 308.6
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Over Runs Used KG -> U13 = 17.28
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Gripper End KGS -> X13 = 10.4
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Trim KGS -> Z13 = 8.9
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Dropped Joint KGS -> AB13 = 
+[2025-10-24 21:46:13] [INFO] Inside Function
+[2025-10-24 21:46:13] [INFO]   Downtime -> AG13 = 
+[2025-10-24 21:46:13] [INFO] Total rows added: 5
+[2025-10-24 21:46:13] [ERROR] [2025-10-24 21:46:13] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:46:13] [ERROR] ReadSupervisorData returned Nothing for Line 2 & 3 - Day Shift Yield & Efficiency
+[2025-10-24 21:46:13] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:46:15] [INFO] Supervisor: Alexandru
+[2025-10-24 21:46:15] [INFO] Checking first marker cell: I9 = '45'
+[2025-10-24 21:46:15] [INFO] Reading row 9
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B9 = 5308101u
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I9 = 45
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L9 = 2160
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R9 = 432
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S9 = 463.5
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T9 = 461.6
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U9 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X9 = 13.9
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z9 = 10
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB9 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG9 = 
+[2025-10-24 21:46:15] [INFO] Reading row 10
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B10 = 5308101s
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I10 = 45
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L10 = 2160
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R10 = 432
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S10 = 475
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T10 = 450.8
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U10 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X10 = 10.9
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z10 = 40.8
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB10 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG10 = 
+[2025-10-24 21:46:15] [INFO] Reading row 11
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B11 = 80095S
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I11 = 21.9999999999999
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L11 = 816
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R11 = 138.72
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S11 = 145
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T11 = 140.2
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U11 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X11 = 2
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z11 = 3.9
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB11 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG11 = 
+[2025-10-24 21:46:15] [INFO] Reading row 12
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B12 = 10982
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I12 = 5.99999999999998
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L12 = 207
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R12 = 49.68
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S12 = 62.5
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T12 = 56.5
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U12 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X12 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z12 = 4.9
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB12 = 5.9
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG12 = 
+[2025-10-24 21:46:15] [INFO] Reading row 13
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B13 = 5301814S
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I13 = 17.0000000000001
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L13 = 498
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R13 = 99.6
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S13 = 129
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T13 = 126.1
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U13 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X13 = 7.4
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z13 = 21.4
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB13 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG13 = 
+[2025-10-24 21:46:15] [INFO] Reading row 14
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B14 = 5301814U
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I14 = 14.9999999999999
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L14 = 480
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R14 = 96
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S14 = 106.5
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T14 = 104
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U14 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X14 = 3.4
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z14 = 6.4
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB14 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG14 = 
+[2025-10-24 21:46:15] [INFO] Reading row 15
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B15 = 19001S
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I15 = 39.9999999999999
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L15 = 1600
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R15 = 272
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S15 = 309
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T15 = 303.7
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U15 = 14.29
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X15 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z15 = 23.8
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB15 = 30.8
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG15 = 
+[2025-10-24 21:46:15] [INFO] Reading row 16
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B16 = 19002S
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I16 = 60.0000000000001
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L16 = 2500
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R16 = 425
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S16 = 521.4
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T16 = 496.7
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U16 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X16 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z16 = 33.3
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB16 = 65.6
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG16 = 
+[2025-10-24 21:46:15] [INFO] Reading row 17
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B17 = 19001S
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I17 = 79.9999999999999
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L17 = 3268
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R17 = 555.56
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S17 = 672
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T17 = 659.1
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U17 = 
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X17 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z17 = 54.2
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB17 = 73.1
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG17 = 
+[2025-10-24 21:46:15] [INFO] Reading row 18
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Product Code -> B18 = 19002S
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Total Min.Work -> I18 = 145
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Pack Produced -> L18 = 6456
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Nominal weight -> R18 = 1097.52
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Weight to slicer -> S18 = 1379
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Slicer Weight -> T18 = 1328.9
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Over Runs Used KG -> U18 = 2.21
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Gripper End KGS -> X18 = 0
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Trim KGS -> Z18 = 133.2
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Dropped Joint KGS -> AB18 = 172.4
+[2025-10-24 21:46:15] [INFO] Inside Function
+[2025-10-24 21:46:15] [INFO]   Downtime -> AG18 = 
+[2025-10-24 21:46:15] [INFO] Total rows added: 10
+[2025-10-24 21:46:15] [ERROR] ReadSupervisorData returned Nothing for Line 2 & 3 - Night Shift Yield & Efficiency
+[2025-10-24 21:46:15] [INFO] Processing Line 4
+[2025-10-24 21:46:15] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:46:16] [INFO] Supervisor: John
+[2025-10-24 21:46:16] [INFO] Checking first marker cell: I9 = '22'
+[2025-10-24 21:46:16] [INFO] Reading row 9
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B9 = 731269
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I9 = 22
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L9 = 600
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q9 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S9 = 300
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T9 = 361
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y9 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA9 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG9 = 
+[2025-10-24 21:46:16] [INFO] Reading row 10
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B10 = 70090
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I10 = 59.9999999999999
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L10 = 1282
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q10 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S10 = 641
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T10 = 744
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y10 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA10 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG10 = 
+[2025-10-24 21:46:16] [INFO] Reading row 11
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B11 = 10134
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I11 = 3.99999999999999
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L11 = 76
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q11 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S11 = 152
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T11 = 155.64
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y11 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA11 = 2
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG11 = 
+[2025-10-24 21:46:16] [INFO] Reading row 12
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B12 = 10133
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I12 = 9.00000000000005
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L12 = 146
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q12 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S12 = 146
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T12 = 150
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y12 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA12 = 3.2
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG12 = 4
+[2025-10-24 21:46:16] [INFO] Reading row 13
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B13 = 10101
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I13 = 35
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L13 = 854
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q13 = 47.7
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S13 = 1024.8
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T13 = 1186.5
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y13 = 57.5
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA13 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG13 = 
+[2025-10-24 21:46:16] [INFO] Reading row 14
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B14 = 705106U
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I14 = 81
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L14 = 1933
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q14 = 81
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S14 = 2319.6
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T14 = 2565.1
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y14 = 133.5
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA14 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG14 = 10
+[2025-10-24 21:46:16] [INFO] Reading row 15
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B15 = 10130
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I15 = 8.49999999999997
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L15 = 201
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q15 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S15 = 201
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T15 = 211
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y15 = 7.5
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA15 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG15 = 
+[2025-10-24 21:46:16] [INFO] Reading row 16
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B16 = 5303180S
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I16 = 45.0000000000001
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L16 = 1152
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q16 = 123
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S16 = 576
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T16 = 818.5
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y16 = 39.2
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA16 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG16 = 
+[2025-10-24 21:46:16] [INFO] Reading row 17
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B17 = 5303180U
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I17 = 88.9999999999999
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L17 = 2304
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q17 = 76.6
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S17 = 1152
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T17 = 1379.5
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y17 = 83.2
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA17 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG17 = 
+[2025-10-24 21:46:16] [INFO] Reading row 18
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B18 = 718262S
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I18 = 18.0000000000001
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L18 = 482
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q18 = 35.9
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S18 = 241
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T18 = 252
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y18 = 18.4
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA18 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG18 = 
+[2025-10-24 21:46:16] [INFO] Reading row 19
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B19 = 718262U
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I19 = 72
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L19 = 1690
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q19 = 85.1
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S19 = 845
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T19 = 1045
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y19 = 40.8
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA19 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG19 = 5
+[2025-10-24 21:46:16] [INFO] Reading row 20
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Product Code -> B20 = 217867
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Total Min.Work -> I20 = 6.99999999999998
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Pack Produced -> L20 = 168
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Dropped Joint KGS -> Q20 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Nominal weight -> S20 = 168
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Weight to slicer -> T20 = 189.5
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Gripper End KGS -> Y20 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Trim KGS -> AA20 = 
+[2025-10-24 21:46:16] [INFO] Inside Function
+[2025-10-24 21:46:16] [INFO]   Downtime -> AG20 = 
+[2025-10-24 21:46:16] [INFO] Total rows added: 12
+[2025-10-24 21:46:16] [ERROR] [2025-10-24 21:46:16] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:46:16] [ERROR] ReadSupervisorData returned Nothing for Line 4 - Day Shift Yield & Efficiency
+[2025-10-24 21:46:16] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:46:16] [WARN] File not found: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:46:16] [SUCCESS] Slicing Import Completed.
+[2025-10-24 21:46:16] [SUCCESS] Slicing import complete.
+[2025-10-24 21:46:16] [INFO] Excel state restored to normal.
+[2025-10-24 21:46:16] [SUCCESS] All imports completed successfully.
+[2025-10-24 21:46:16] [INFO] Total runtime: 00:00:08
+[2025-10-24 21:46:16] [INFO] Log session ended.

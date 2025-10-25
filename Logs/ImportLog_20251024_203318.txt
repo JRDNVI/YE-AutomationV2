@@ -1,0 +1,40 @@
+[2025-10-24 20:33:18] [INFO] Log session started: C:\Users\coadyj\projects\YE-AutomationV2\Logs\ImportLog_20251024_203318.txt
+[2025-10-24 20:33:18] [INFO] Supervisor Import Started...
+[2025-10-24 20:33:18] [INFO] Target Date: 22/10/2025
+[2025-10-24 20:33:18] [INFO] Excel state set to automation mode.
+[2025-10-24 20:33:18] [INFO] Running Slicing Import Controller...
+[2025-10-24 20:33:18] [INFO] Slicing Import Started...
+[2025-10-24 20:33:18] [INFO] Processing Line 1
+[2025-10-24 20:33:18] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 20:33:21] [INFO] Supervisor: Piotr
+[2025-10-24 20:33:21] [INFO] Detected last data row: 85 (Yields and Efficiency)
+[2025-10-24 20:33:21] [ERROR] [2025-10-24 20:33:21] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 20:33:21] [WARN] Line 1 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 20:33:21] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 20:33:22] [INFO] Supervisor: Daniela
+[2025-10-24 20:33:22] [INFO] Detected last data row: 48 (Yields and Efficiency)
+[2025-10-24 20:33:22] [WARN] Line 1 - Night Shift Yield & Efficiency: no valid data found.
+[2025-10-24 20:33:22] [INFO] Processing Line 2 & 3
+[2025-10-24 20:33:22] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 20:33:23] [INFO] Supervisor: Andrius
+[2025-10-24 20:33:23] [INFO] Detected last data row: 100 (Yields and Efficiency)
+[2025-10-24 20:33:23] [ERROR] [2025-10-24 20:33:23] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 20:33:23] [WARN] Line 2 & 3 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 20:33:23] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 20:33:24] [INFO] Supervisor: Alexandru
+[2025-10-24 20:33:24] [INFO] Detected last data row: 52 (Yields and Efficiency)
+[2025-10-24 20:33:24] [WARN] Line 2 & 3 - Night Shift Yield & Efficiency: no valid data found.
+[2025-10-24 20:33:24] [INFO] Processing Line 4
+[2025-10-24 20:33:24] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 20:33:24] [INFO] Supervisor: John
+[2025-10-24 20:33:24] [INFO] Detected last data row: 81 (Yields and Efficiency)
+[2025-10-24 20:33:24] [ERROR] [2025-10-24 20:33:24] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 20:33:24] [WARN] Line 4 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 20:33:24] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 20:33:25] [WARN] File not found: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 20:33:25] [SUCCESS] Slicing Import Completed.
+[2025-10-24 20:33:25] [SUCCESS] Slicing import complete.
+[2025-10-24 20:33:25] [INFO] Excel state restored to normal.
+[2025-10-24 20:33:25] [SUCCESS] All imports completed successfully.
+[2025-10-24 20:33:25] [INFO] Total runtime: 00:00:07
+[2025-10-24 20:33:25] [INFO] Log session ended.

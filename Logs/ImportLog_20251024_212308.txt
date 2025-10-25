@@ -1,0 +1,1221 @@
+[2025-10-24 21:23:08] [INFO] Log session started: C:\Users\coadyj\projects\YE-AutomationV2\Logs\ImportLog_20251024_212308.txt
+[2025-10-24 21:23:08] [INFO] Supervisor Import Started...
+[2025-10-24 21:23:08] [INFO] Target Date: 22/10/2025
+[2025-10-24 21:23:09] [INFO] Excel state set to automation mode.
+[2025-10-24 21:23:09] [INFO] Running Slicing Import Controller...
+[2025-10-24 21:23:09] [INFO] Slicing Import Started...
+[2025-10-24 21:23:09] [INFO] Processing Line 1
+[2025-10-24 21:23:09] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:23:11] [INFO] Supervisor: Piotr
+[2025-10-24 21:23:11] [INFO] 11
+[2025-10-24 21:23:11] [INFO] Product Code
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Total Min.Work
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Pack Produced
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Nominal weight
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Weight to slicer
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Slicer Weight
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Over Runs Used KG
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Gripper End KGS
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Trim KGS
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Downtime
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] 11
+[2025-10-24 21:23:11] [INFO] Product Code
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Total Min.Work
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Pack Produced
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Nominal weight
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Weight to slicer
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Slicer Weight
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Over Runs Used KG
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Gripper End KGS
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Trim KGS
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [INFO] Downtime
+[2025-10-24 21:23:11] [INFO] Inside Function
+[2025-10-24 21:23:11] [INFO] It got passed FindColumn
+[2025-10-24 21:23:11] [ERROR] [2025-10-24 21:23:11] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:23:11] [WARN] Line 1 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:23:11] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:23:12] [INFO] Supervisor: Daniela
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] 11
+[2025-10-24 21:23:12] [INFO] Product Code
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Total Min.Work
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Pack Produced
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Nominal weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Weight to slicer
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Slicer Weight
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Over Runs Used KG
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Gripper End KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Trim KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [INFO] Downtime
+[2025-10-24 21:23:12] [INFO] Inside Function
+[2025-10-24 21:23:12] [INFO] It got passed FindColumn
+[2025-10-24 21:23:12] [WARN] Line 1 - Night Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:23:12] [INFO] Processing Line 2 & 3
+[2025-10-24 21:23:12] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:23:13] [INFO] Supervisor: Andrius
+[2025-10-24 21:23:13] [INFO] 11
+[2025-10-24 21:23:13] [INFO] Product Code
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Total Min.Work
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Pack Produced
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Nominal weight
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Weight to slicer
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Slicer Weight
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Over Runs Used KG
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Gripper End KGS
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Trim KGS
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Downtime
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] 11
+[2025-10-24 21:23:13] [INFO] Product Code
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Total Min.Work
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Pack Produced
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Nominal weight
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Weight to slicer
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Slicer Weight
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Over Runs Used KG
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Gripper End KGS
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Trim KGS
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Downtime
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] 11
+[2025-10-24 21:23:13] [INFO] Product Code
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:13] [INFO] It got passed FindColumn
+[2025-10-24 21:23:13] [INFO] Total Min.Work
+[2025-10-24 21:23:13] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Pack Produced
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Nominal weight
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Weight to slicer
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Slicer Weight
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Over Runs Used KG
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Gripper End KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Trim KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Downtime
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] 11
+[2025-10-24 21:23:14] [INFO] Product Code
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Total Min.Work
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Pack Produced
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Nominal weight
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Weight to slicer
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Slicer Weight
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Over Runs Used KG
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Gripper End KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Trim KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Downtime
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] 11
+[2025-10-24 21:23:14] [INFO] Product Code
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Total Min.Work
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Pack Produced
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Nominal weight
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Weight to slicer
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Slicer Weight
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Over Runs Used KG
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Gripper End KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Trim KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [INFO] Downtime
+[2025-10-24 21:23:14] [INFO] Inside Function
+[2025-10-24 21:23:14] [INFO] It got passed FindColumn
+[2025-10-24 21:23:14] [ERROR] [2025-10-24 21:23:14] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:23:14] [WARN] Line 2 & 3 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:23:14] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:23:15] [INFO] Supervisor: Alexandru
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] 11
+[2025-10-24 21:23:15] [INFO] Product Code
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Total Min.Work
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Pack Produced
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Nominal weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Weight to slicer
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Slicer Weight
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Over Runs Used KG
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Gripper End KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Trim KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [INFO] Downtime
+[2025-10-24 21:23:15] [INFO] Inside Function
+[2025-10-24 21:23:15] [INFO] It got passed FindColumn
+[2025-10-24 21:23:15] [WARN] Line 2 & 3 - Night Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:23:15] [INFO] Processing Line 4
+[2025-10-24 21:23:15] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:23:16] [INFO] Supervisor: John
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] 9
+[2025-10-24 21:23:16] [INFO] Product Code
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Total Min.Work
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Pack Produced
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Dropped Joint KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Nominal weight
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Weight to slicer
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Gripper End KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Trim KGS
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [INFO] Downtime
+[2025-10-24 21:23:16] [INFO] Inside Function
+[2025-10-24 21:23:16] [INFO] It got passed FindColumn
+[2025-10-24 21:23:16] [ERROR] [2025-10-24 21:23:16] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:23:16] [WARN] Line 4 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:23:16] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:23:16] [WARN] File not found: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:23:16] [SUCCESS] Slicing Import Completed.
+[2025-10-24 21:23:16] [SUCCESS] Slicing import complete.
+[2025-10-24 21:23:16] [INFO] Excel state restored to normal.
+[2025-10-24 21:23:16] [SUCCESS] All imports completed successfully.
+[2025-10-24 21:23:16] [INFO] Total runtime: 00:00:08
+[2025-10-24 21:23:16] [INFO] Log session ended.

@@ -1,0 +1,1221 @@
+[2025-10-24 21:39:03] [INFO] Log session started: C:\Users\coadyj\projects\YE-AutomationV2\Logs\ImportLog_20251024_213903.txt
+[2025-10-24 21:39:03] [INFO] Supervisor Import Started...
+[2025-10-24 21:39:03] [INFO] Target Date: 22/10/2025
+[2025-10-24 21:39:03] [INFO] Excel state set to automation mode.
+[2025-10-24 21:39:03] [INFO] Running Slicing Import Controller...
+[2025-10-24 21:39:03] [INFO] Slicing Import Started...
+[2025-10-24 21:39:03] [INFO] Processing Line 1
+[2025-10-24 21:39:03] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:39:05] [INFO] Supervisor: Piotr
+[2025-10-24 21:39:05] [INFO] 11
+[2025-10-24 21:39:05] [INFO] Product Code
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] B8
+[2025-10-24 21:39:05] [INFO] Total Min.Work
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] I8
+[2025-10-24 21:39:05] [INFO] Pack Produced
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] L8
+[2025-10-24 21:39:05] [INFO] Nominal weight
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] R8
+[2025-10-24 21:39:05] [INFO] Weight to slicer
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] S8
+[2025-10-24 21:39:05] [INFO] Slicer Weight
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] T8
+[2025-10-24 21:39:05] [INFO] Over Runs Used KG
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] U8
+[2025-10-24 21:39:05] [INFO] Gripper End KGS
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] X8
+[2025-10-24 21:39:05] [INFO] Trim KGS
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] Z8
+[2025-10-24 21:39:05] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] AB8
+[2025-10-24 21:39:05] [INFO] Downtime
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] AG8
+[2025-10-24 21:39:05] [INFO] 11
+[2025-10-24 21:39:05] [INFO] Product Code
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] B8
+[2025-10-24 21:39:05] [INFO] Total Min.Work
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] I8
+[2025-10-24 21:39:05] [INFO] Pack Produced
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] L8
+[2025-10-24 21:39:05] [INFO] Nominal weight
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] R8
+[2025-10-24 21:39:05] [INFO] Weight to slicer
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] S8
+[2025-10-24 21:39:05] [INFO] Slicer Weight
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] T8
+[2025-10-24 21:39:05] [INFO] Over Runs Used KG
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] U8
+[2025-10-24 21:39:05] [INFO] Gripper End KGS
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] X8
+[2025-10-24 21:39:05] [INFO] Trim KGS
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] Z8
+[2025-10-24 21:39:05] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] AB8
+[2025-10-24 21:39:05] [INFO] Downtime
+[2025-10-24 21:39:05] [INFO] Inside Function
+[2025-10-24 21:39:05] [INFO] AG8
+[2025-10-24 21:39:05] [ERROR] [2025-10-24 21:39:05] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:39:05] [ERROR] ReadSupervisorData returned Nothing for Line 1 - Day Shift Yield & Efficiency
+[2025-10-24 21:39:05] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:39:06] [INFO] Supervisor: Daniela
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [INFO] 11
+[2025-10-24 21:39:06] [INFO] Product Code
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] B8
+[2025-10-24 21:39:06] [INFO] Total Min.Work
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] I8
+[2025-10-24 21:39:06] [INFO] Pack Produced
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] L8
+[2025-10-24 21:39:06] [INFO] Nominal weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] R8
+[2025-10-24 21:39:06] [INFO] Weight to slicer
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] S8
+[2025-10-24 21:39:06] [INFO] Slicer Weight
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] T8
+[2025-10-24 21:39:06] [INFO] Over Runs Used KG
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] U8
+[2025-10-24 21:39:06] [INFO] Gripper End KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] X8
+[2025-10-24 21:39:06] [INFO] Trim KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] Z8
+[2025-10-24 21:39:06] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AB8
+[2025-10-24 21:39:06] [INFO] Downtime
+[2025-10-24 21:39:06] [INFO] Inside Function
+[2025-10-24 21:39:06] [INFO] AG8
+[2025-10-24 21:39:06] [ERROR] ReadSupervisorData returned Nothing for Line 1 - Night Shift Yield & Efficiency
+[2025-10-24 21:39:06] [INFO] Processing Line 2 & 3
+[2025-10-24 21:39:06] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:39:07] [INFO] Supervisor: Andrius
+[2025-10-24 21:39:07] [INFO] 11
+[2025-10-24 21:39:07] [INFO] Product Code
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] B8
+[2025-10-24 21:39:07] [INFO] Total Min.Work
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] I8
+[2025-10-24 21:39:07] [INFO] Pack Produced
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] L8
+[2025-10-24 21:39:07] [INFO] Nominal weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] R8
+[2025-10-24 21:39:07] [INFO] Weight to slicer
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] S8
+[2025-10-24 21:39:07] [INFO] Slicer Weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] T8
+[2025-10-24 21:39:07] [INFO] Over Runs Used KG
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] U8
+[2025-10-24 21:39:07] [INFO] Gripper End KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] X8
+[2025-10-24 21:39:07] [INFO] Trim KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] Z8
+[2025-10-24 21:39:07] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AB8
+[2025-10-24 21:39:07] [INFO] Downtime
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AG8
+[2025-10-24 21:39:07] [INFO] 11
+[2025-10-24 21:39:07] [INFO] Product Code
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] B8
+[2025-10-24 21:39:07] [INFO] Total Min.Work
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] I8
+[2025-10-24 21:39:07] [INFO] Pack Produced
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] L8
+[2025-10-24 21:39:07] [INFO] Nominal weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] R8
+[2025-10-24 21:39:07] [INFO] Weight to slicer
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] S8
+[2025-10-24 21:39:07] [INFO] Slicer Weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] T8
+[2025-10-24 21:39:07] [INFO] Over Runs Used KG
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] U8
+[2025-10-24 21:39:07] [INFO] Gripper End KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] X8
+[2025-10-24 21:39:07] [INFO] Trim KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] Z8
+[2025-10-24 21:39:07] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AB8
+[2025-10-24 21:39:07] [INFO] Downtime
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AG8
+[2025-10-24 21:39:07] [INFO] 11
+[2025-10-24 21:39:07] [INFO] Product Code
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] B8
+[2025-10-24 21:39:07] [INFO] Total Min.Work
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] I8
+[2025-10-24 21:39:07] [INFO] Pack Produced
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] L8
+[2025-10-24 21:39:07] [INFO] Nominal weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] R8
+[2025-10-24 21:39:07] [INFO] Weight to slicer
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] S8
+[2025-10-24 21:39:07] [INFO] Slicer Weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] T8
+[2025-10-24 21:39:07] [INFO] Over Runs Used KG
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] U8
+[2025-10-24 21:39:07] [INFO] Gripper End KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] X8
+[2025-10-24 21:39:07] [INFO] Trim KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] Z8
+[2025-10-24 21:39:07] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AB8
+[2025-10-24 21:39:07] [INFO] Downtime
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AG8
+[2025-10-24 21:39:07] [INFO] 11
+[2025-10-24 21:39:07] [INFO] Product Code
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] B8
+[2025-10-24 21:39:07] [INFO] Total Min.Work
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] I8
+[2025-10-24 21:39:07] [INFO] Pack Produced
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] L8
+[2025-10-24 21:39:07] [INFO] Nominal weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] R8
+[2025-10-24 21:39:07] [INFO] Weight to slicer
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] S8
+[2025-10-24 21:39:07] [INFO] Slicer Weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] T8
+[2025-10-24 21:39:07] [INFO] Over Runs Used KG
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] U8
+[2025-10-24 21:39:07] [INFO] Gripper End KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] X8
+[2025-10-24 21:39:07] [INFO] Trim KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] Z8
+[2025-10-24 21:39:07] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AB8
+[2025-10-24 21:39:07] [INFO] Downtime
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AG8
+[2025-10-24 21:39:07] [INFO] 11
+[2025-10-24 21:39:07] [INFO] Product Code
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] B8
+[2025-10-24 21:39:07] [INFO] Total Min.Work
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] I8
+[2025-10-24 21:39:07] [INFO] Pack Produced
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] L8
+[2025-10-24 21:39:07] [INFO] Nominal weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] R8
+[2025-10-24 21:39:07] [INFO] Weight to slicer
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] S8
+[2025-10-24 21:39:07] [INFO] Slicer Weight
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] T8
+[2025-10-24 21:39:07] [INFO] Over Runs Used KG
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] U8
+[2025-10-24 21:39:07] [INFO] Gripper End KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] X8
+[2025-10-24 21:39:07] [INFO] Trim KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] Z8
+[2025-10-24 21:39:07] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AB8
+[2025-10-24 21:39:07] [INFO] Downtime
+[2025-10-24 21:39:07] [INFO] Inside Function
+[2025-10-24 21:39:07] [INFO] AG8
+[2025-10-24 21:39:07] [ERROR] [2025-10-24 21:39:07] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:39:07] [ERROR] ReadSupervisorData returned Nothing for Line 2 & 3 - Day Shift Yield & Efficiency
+[2025-10-24 21:39:07] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:39:08] [INFO] Supervisor: Alexandru
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [INFO] 11
+[2025-10-24 21:39:08] [INFO] Product Code
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] B8
+[2025-10-24 21:39:08] [INFO] Total Min.Work
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] I8
+[2025-10-24 21:39:08] [INFO] Pack Produced
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] L8
+[2025-10-24 21:39:08] [INFO] Nominal weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] R8
+[2025-10-24 21:39:08] [INFO] Weight to slicer
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] S8
+[2025-10-24 21:39:08] [INFO] Slicer Weight
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] T8
+[2025-10-24 21:39:08] [INFO] Over Runs Used KG
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] U8
+[2025-10-24 21:39:08] [INFO] Gripper End KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] X8
+[2025-10-24 21:39:08] [INFO] Trim KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] Z8
+[2025-10-24 21:39:08] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AB8
+[2025-10-24 21:39:08] [INFO] Downtime
+[2025-10-24 21:39:08] [INFO] Inside Function
+[2025-10-24 21:39:08] [INFO] AG8
+[2025-10-24 21:39:08] [ERROR] ReadSupervisorData returned Nothing for Line 2 & 3 - Night Shift Yield & Efficiency
+[2025-10-24 21:39:08] [INFO] Processing Line 4
+[2025-10-24 21:39:08] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:39:09] [INFO] Supervisor: John
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [INFO] 9
+[2025-10-24 21:39:09] [INFO] Product Code
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] B8
+[2025-10-24 21:39:09] [INFO] Total Min.Work
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] I8
+[2025-10-24 21:39:09] [INFO] Pack Produced
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] L8
+[2025-10-24 21:39:09] [INFO] Dropped Joint KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Q8
+[2025-10-24 21:39:09] [INFO] Nominal weight
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] S8
+[2025-10-24 21:39:09] [INFO] Weight to slicer
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] T8
+[2025-10-24 21:39:09] [INFO] Gripper End KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] Y8
+[2025-10-24 21:39:09] [INFO] Trim KGS
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AA8
+[2025-10-24 21:39:09] [INFO] Downtime
+[2025-10-24 21:39:09] [INFO] Inside Function
+[2025-10-24 21:39:09] [INFO] AG8
+[2025-10-24 21:39:09] [ERROR] [2025-10-24 21:39:09] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:39:09] [ERROR] ReadSupervisorData returned Nothing for Line 4 - Day Shift Yield & Efficiency
+[2025-10-24 21:39:09] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:39:09] [WARN] File not found: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:39:09] [SUCCESS] Slicing Import Completed.
+[2025-10-24 21:39:09] [SUCCESS] Slicing import complete.
+[2025-10-24 21:39:09] [INFO] Excel state restored to normal.
+[2025-10-24 21:39:09] [SUCCESS] All imports completed successfully.
+[2025-10-24 21:39:09] [INFO] Total runtime: 00:00:06
+[2025-10-24 21:39:09] [INFO] Log session ended.

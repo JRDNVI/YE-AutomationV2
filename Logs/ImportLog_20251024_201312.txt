@@ -1,0 +1,40 @@
+[2025-10-24 20:13:12] [INFO] Log session started: C:\Users\coadyj\projects\YE-AutomationV2\Logs\ImportLog_20251024_201312.txt
+[2025-10-24 20:13:12] [INFO] Supervisor Import Started...
+[2025-10-24 20:13:12] [INFO] Target Date: 22/10/2025
+[2025-10-24 20:13:12] [INFO] Excel state set to automation mode.
+[2025-10-24 20:13:12] [INFO] Running Slicing Import Controller...
+[2025-10-24 20:13:12] [INFO] Slicing Import Started...
+[2025-10-24 20:13:12] [INFO] Processing Line 1
+[2025-10-24 20:13:12] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 20:13:15] [ERROR] [2025-10-24 20:13:15] Error 0 in ReadYESheet.ReadSupervisorData: 
+[2025-10-24 20:13:15] [INFO] Line 1 - Day Shift Yield & Efficiency: last data row 9
+[2025-10-24 20:13:31] [ERROR] [2025-10-24 20:13:31] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 20:13:31] [SUCCESS] Line 1 - Day Shift Yield & Efficiency: imported 1 rows successfully.
+[2025-10-24 20:13:31] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 20:13:32] [ERROR] [2025-10-24 20:13:32] Error 0 in ReadYESheet.ReadSupervisorData: 
+[2025-10-24 20:13:32] [INFO] Line 1 - Night Shift Yield & Efficiency: last data row 9
+[2025-10-24 20:13:32] [SUCCESS] Line 1 - Night Shift Yield & Efficiency: imported 1 rows successfully.
+[2025-10-24 20:13:32] [INFO] Processing Line 2 & 3
+[2025-10-24 20:13:32] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 20:13:33] [ERROR] [2025-10-24 20:13:33] Error 0 in ReadYESheet.ReadSupervisorData: 
+[2025-10-24 20:13:33] [INFO] Line 2 & 3 - Day Shift Yield & Efficiency: last data row 9
+[2025-10-24 20:13:33] [ERROR] [2025-10-24 20:13:33] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 20:13:33] [SUCCESS] Line 2 & 3 - Day Shift Yield & Efficiency: imported 1 rows successfully.
+[2025-10-24 20:13:33] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 20:13:34] [ERROR] [2025-10-24 20:13:34] Error 0 in ReadYESheet.ReadSupervisorData: 
+[2025-10-24 20:13:34] [INFO] Line 2 & 3 - Night Shift Yield & Efficiency: last data row 9
+[2025-10-24 20:13:34] [SUCCESS] Line 2 & 3 - Night Shift Yield & Efficiency: imported 1 rows successfully.
+[2025-10-24 20:13:34] [INFO] Processing Line 4
+[2025-10-24 20:13:34] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 20:13:35] [ERROR] [2025-10-24 20:13:35] Error 0 in ReadYESheet.ReadSupervisorData: 
+[2025-10-24 20:13:35] [INFO] Line 4 - Day Shift Yield & Efficiency: last data row 9
+[2025-10-24 20:13:35] [ERROR] [2025-10-24 20:13:35] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 20:13:35] [SUCCESS] Line 4 - Day Shift Yield & Efficiency: imported 1 rows successfully.
+[2025-10-24 20:13:35] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 20:13:35] [WARN] File not found: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 20:13:35] [SUCCESS] Slicing Import Completed.
+[2025-10-24 20:13:35] [SUCCESS] Slicing import complete.
+[2025-10-24 20:13:35] [INFO] Excel state restored to normal.
+[2025-10-24 20:13:35] [SUCCESS] All imports completed successfully.
+[2025-10-24 20:13:35] [INFO] Total runtime: 00:00:23
+[2025-10-24 20:13:35] [INFO] Log session ended.

@@ -1,0 +1,455 @@
+[2025-10-24 21:14:39] [INFO] Log session started: C:\Users\coadyj\projects\YE-AutomationV2\Logs\ImportLog_20251024_211439.txt
+[2025-10-24 21:14:39] [INFO] Supervisor Import Started...
+[2025-10-24 21:14:39] [INFO] Target Date: 22/10/2025
+[2025-10-24 21:14:39] [INFO] Excel state set to automation mode.
+[2025-10-24 21:14:39] [INFO] Running Slicing Import Controller...
+[2025-10-24 21:14:39] [INFO] Slicing Import Started...
+[2025-10-24 21:14:39] [INFO] Processing Line 1
+[2025-10-24 21:14:39] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:14:41] [INFO] Supervisor: Piotr
+[2025-10-24 21:14:41] [INFO] 11
+[2025-10-24 21:14:41] [INFO] Product Code
+[2025-10-24 21:14:41] [INFO] Total Min.Work
+[2025-10-24 21:14:41] [INFO] Pack Produced
+[2025-10-24 21:14:41] [INFO] Nominal weight
+[2025-10-24 21:14:41] [INFO] Weight to slicer
+[2025-10-24 21:14:41] [INFO] Slicer Weight
+[2025-10-24 21:14:41] [INFO] Over Runs Used KG
+[2025-10-24 21:14:41] [INFO] Gripper End KGS
+[2025-10-24 21:14:41] [INFO] Trim KGS
+[2025-10-24 21:14:41] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:41] [INFO] Downtime
+[2025-10-24 21:14:41] [INFO] 11
+[2025-10-24 21:14:41] [INFO] Product Code
+[2025-10-24 21:14:41] [INFO] Total Min.Work
+[2025-10-24 21:14:41] [INFO] Pack Produced
+[2025-10-24 21:14:41] [INFO] Nominal weight
+[2025-10-24 21:14:41] [INFO] Weight to slicer
+[2025-10-24 21:14:41] [INFO] Slicer Weight
+[2025-10-24 21:14:41] [INFO] Over Runs Used KG
+[2025-10-24 21:14:41] [INFO] Gripper End KGS
+[2025-10-24 21:14:41] [INFO] Trim KGS
+[2025-10-24 21:14:41] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:41] [INFO] Downtime
+[2025-10-24 21:14:41] [ERROR] [2025-10-24 21:14:41] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:14:41] [WARN] Line 1 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:14:41] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 1\2025\October\22.10.2025.xlsx
+[2025-10-24 21:14:42] [INFO] Supervisor: Daniela
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [INFO] 11
+[2025-10-24 21:14:42] [INFO] Product Code
+[2025-10-24 21:14:42] [INFO] Total Min.Work
+[2025-10-24 21:14:42] [INFO] Pack Produced
+[2025-10-24 21:14:42] [INFO] Nominal weight
+[2025-10-24 21:14:42] [INFO] Weight to slicer
+[2025-10-24 21:14:42] [INFO] Slicer Weight
+[2025-10-24 21:14:42] [INFO] Over Runs Used KG
+[2025-10-24 21:14:42] [INFO] Gripper End KGS
+[2025-10-24 21:14:42] [INFO] Trim KGS
+[2025-10-24 21:14:42] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:42] [INFO] Downtime
+[2025-10-24 21:14:42] [WARN] Line 1 - Night Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:14:42] [INFO] Processing Line 2 & 3
+[2025-10-24 21:14:42] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:14:43] [INFO] Supervisor: Andrius
+[2025-10-24 21:14:43] [INFO] 11
+[2025-10-24 21:14:43] [INFO] Product Code
+[2025-10-24 21:14:43] [INFO] Total Min.Work
+[2025-10-24 21:14:43] [INFO] Pack Produced
+[2025-10-24 21:14:43] [INFO] Nominal weight
+[2025-10-24 21:14:43] [INFO] Weight to slicer
+[2025-10-24 21:14:43] [INFO] Slicer Weight
+[2025-10-24 21:14:43] [INFO] Over Runs Used KG
+[2025-10-24 21:14:43] [INFO] Gripper End KGS
+[2025-10-24 21:14:43] [INFO] Trim KGS
+[2025-10-24 21:14:43] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:43] [INFO] Downtime
+[2025-10-24 21:14:43] [INFO] 11
+[2025-10-24 21:14:43] [INFO] Product Code
+[2025-10-24 21:14:43] [INFO] Total Min.Work
+[2025-10-24 21:14:43] [INFO] Pack Produced
+[2025-10-24 21:14:43] [INFO] Nominal weight
+[2025-10-24 21:14:43] [INFO] Weight to slicer
+[2025-10-24 21:14:43] [INFO] Slicer Weight
+[2025-10-24 21:14:43] [INFO] Over Runs Used KG
+[2025-10-24 21:14:43] [INFO] Gripper End KGS
+[2025-10-24 21:14:43] [INFO] Trim KGS
+[2025-10-24 21:14:43] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:43] [INFO] Downtime
+[2025-10-24 21:14:43] [INFO] 11
+[2025-10-24 21:14:43] [INFO] Product Code
+[2025-10-24 21:14:43] [INFO] Total Min.Work
+[2025-10-24 21:14:43] [INFO] Pack Produced
+[2025-10-24 21:14:43] [INFO] Nominal weight
+[2025-10-24 21:14:43] [INFO] Weight to slicer
+[2025-10-24 21:14:43] [INFO] Slicer Weight
+[2025-10-24 21:14:43] [INFO] Over Runs Used KG
+[2025-10-24 21:14:43] [INFO] Gripper End KGS
+[2025-10-24 21:14:43] [INFO] Trim KGS
+[2025-10-24 21:14:43] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:43] [INFO] Downtime
+[2025-10-24 21:14:43] [INFO] 11
+[2025-10-24 21:14:43] [INFO] Product Code
+[2025-10-24 21:14:43] [INFO] Total Min.Work
+[2025-10-24 21:14:43] [INFO] Pack Produced
+[2025-10-24 21:14:43] [INFO] Nominal weight
+[2025-10-24 21:14:43] [INFO] Weight to slicer
+[2025-10-24 21:14:43] [INFO] Slicer Weight
+[2025-10-24 21:14:43] [INFO] Over Runs Used KG
+[2025-10-24 21:14:43] [INFO] Gripper End KGS
+[2025-10-24 21:14:43] [INFO] Trim KGS
+[2025-10-24 21:14:43] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:43] [INFO] Downtime
+[2025-10-24 21:14:43] [INFO] 11
+[2025-10-24 21:14:43] [INFO] Product Code
+[2025-10-24 21:14:43] [INFO] Total Min.Work
+[2025-10-24 21:14:43] [INFO] Pack Produced
+[2025-10-24 21:14:43] [INFO] Nominal weight
+[2025-10-24 21:14:43] [INFO] Weight to slicer
+[2025-10-24 21:14:43] [INFO] Slicer Weight
+[2025-10-24 21:14:43] [INFO] Over Runs Used KG
+[2025-10-24 21:14:43] [INFO] Gripper End KGS
+[2025-10-24 21:14:43] [INFO] Trim KGS
+[2025-10-24 21:14:43] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:43] [INFO] Downtime
+[2025-10-24 21:14:43] [ERROR] [2025-10-24 21:14:43] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:14:43] [WARN] Line 2 & 3 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:14:43] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 2 & 3\2025\October\22.10.2025.xlsx
+[2025-10-24 21:14:44] [INFO] Supervisor: Alexandru
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [INFO] 11
+[2025-10-24 21:14:44] [INFO] Product Code
+[2025-10-24 21:14:44] [INFO] Total Min.Work
+[2025-10-24 21:14:44] [INFO] Pack Produced
+[2025-10-24 21:14:44] [INFO] Nominal weight
+[2025-10-24 21:14:44] [INFO] Weight to slicer
+[2025-10-24 21:14:44] [INFO] Slicer Weight
+[2025-10-24 21:14:44] [INFO] Over Runs Used KG
+[2025-10-24 21:14:44] [INFO] Gripper End KGS
+[2025-10-24 21:14:44] [INFO] Trim KGS
+[2025-10-24 21:14:44] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:44] [INFO] Downtime
+[2025-10-24 21:14:44] [WARN] Line 2 & 3 - Night Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:14:44] [INFO] Processing Line 4
+[2025-10-24 21:14:44] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Day Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:14:45] [INFO] Supervisor: John
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [INFO] 9
+[2025-10-24 21:14:45] [INFO] Product Code
+[2025-10-24 21:14:45] [INFO] Total Min.Work
+[2025-10-24 21:14:45] [INFO] Pack Produced
+[2025-10-24 21:14:45] [INFO] Dropped Joint KGS
+[2025-10-24 21:14:45] [INFO] Nominal weight
+[2025-10-24 21:14:45] [INFO] Weight to slicer
+[2025-10-24 21:14:45] [INFO] Gripper End KGS
+[2025-10-24 21:14:45] [INFO] Trim KGS
+[2025-10-24 21:14:45] [INFO] Downtime
+[2025-10-24 21:14:45] [ERROR] [2025-10-24 21:14:45] Error 0 in SlicingImportController.ProcessLine: 
+[2025-10-24 21:14:45] [WARN] Line 4 - Day Shift Yield & Efficiency: no valid data found.
+[2025-10-24 21:14:45] [INFO] Checking file: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:14:45] [WARN] File not found: \\Oak-w2k22-dc01\Department\Supervisor\\Night Shift Yield & Efficiency\Line 4\2025\October\22.10.2025.xlsx
+[2025-10-24 21:14:45] [SUCCESS] Slicing Import Completed.
+[2025-10-24 21:14:45] [SUCCESS] Slicing import complete.
+[2025-10-24 21:14:45] [INFO] Excel state restored to normal.
+[2025-10-24 21:14:45] [SUCCESS] All imports completed successfully.
+[2025-10-24 21:14:45] [INFO] Total runtime: 00:00:06
+[2025-10-24 21:14:45] [INFO] Log session ended.
