@@ -24,6 +24,9 @@ Private LineOne As Object
 Private LineTwoThree As Object
 Private LineFour As Object
 
+Private LineOneProduction As Object
+Private LineTwoThreeProduction As Object
+Private LineFourProduction As Object
 
 Private Sub Class_Initialize()
 
@@ -75,6 +78,56 @@ Private Sub Class_Initialize()
         .Add "Downtime", "O"
     End With
 
+    Set LineOneProduction = CreateObject("Scripting.Dictionary")
+    Set LineTwoThreeProduction = CreateObject("Scripting.Dictionary")
+    Set LineFourProduction = CreateObject("Scripting.Dictionary")
+
+    With LineOneProduction
+        .Add "Product Code", "C"
+        .Add "Product", "D"
+        .Add "Time", "G"
+        .Add "Web Change", "H"
+        .Add "Label Change", "I"
+        .Add "Raw material", "J"
+        .Add "Packaging", "K"
+        .Add "Change over", "L"
+        .Add "People", "M"
+        .Add "Training", "N"
+        .Add "Other", "P"
+        .Add "Description of Issue", "S"
+    End With
+
+    With LineTwoThreeProduction
+        .Add "Product Code", "C"
+        .Add "Product", "D"
+        .Add "Time", "G"
+        .Add "Web Change", "H"
+        .Add "Label Change", "I"
+        .Add "Raw material", "J"
+        .Add "Packaging", "K"
+        .Add "Change over", "L"
+        .Add "People", "M"
+        .Add "Training", "N"
+        .Add "Other", "P"
+        .Add "Description of Issue", "S"
+    End With
+
+    With LineFourProduction
+        .Add "Product Code", "C"
+        .Add "Product", "D"
+        .Add "Time", "G"
+        .Add "Web Change", "H"
+        .Add "Label Change", "I"
+        .Add "Raw material", "J"
+        .Add "Packaging", "K"
+        .Add "Change over", "L"
+        .Add "People", "M"
+        .Add "Training", "N"
+        .Add "Other", "P"
+        .Add "Description of Issue", "S"
+    End With
+
+
 End Sub
 
 Public Function GetPath(ByVal key As String) As String
@@ -86,6 +139,24 @@ Public Function GetPath(ByVal key As String) As String
         Case Else: GetPath = ""
     End Select
 End Function
+
+Public Property Get GetLineMap(ByVal lineName As String) As Object
+    Select Case LCase(lineName)
+        Case "line 1": Set GetLineMap = LineOne
+        Case "line 2 & 3": Set GetLineMap = LineTwoThree
+        Case "line 4": Set GetLineMap = LineFour
+        Case Else: Set GetLineMap = Nothing
+    End Select
+End Property
+
+Public Property Get GetLineProductionMap(ByVal lineName As String) As Object
+    Select Case LCase(lineName)
+        Case "line 1": Set GetLineProductionMap = LineOneProduction
+        Case "line 2 & 3": Set GetLineProductionMap = LineTwoThreeProduction
+        Case "line 4": Set GetLineProductionMap = LineFourProduction
+        Case Else: Set GetLineProductionMap = Nothing
+    End Select
+End Property   
 
 Public Property Get GetShifts() As Variant
     GetShifts = Shifts
@@ -103,11 +174,4 @@ Public Property Get GetTargetDate() As Date
     GetTargetDate = TARGET_DATE
 End Property
 
-Public Property Get GetLineMap(ByVal lineName As String) As Object
-    Select Case LCase(lineName)
-        Case "line 1": Set GetLineMap = LineOne
-        Case "line 2 & 3": Set GetLineMap = LineTwoThree
-        Case "line 4": Set GetLineMap = LineFour
-        Case Else: Set GetLineMap = Nothing
-    End Select
-End Property
+ 

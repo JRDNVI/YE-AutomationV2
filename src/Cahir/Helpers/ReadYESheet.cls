@@ -3,6 +3,7 @@ BEGIN
   MultiUse = -1
 END
 Attribute VB_Name = "ReadYESheet"
+
 Option Explicit
 
 ' ===========================================
@@ -19,9 +20,7 @@ Private state As ExcelStateManager
 private config As ConfigCahir
 Private utils As Utils
 
-Public Sub Init(ByRef lg As LogHelper, _
-                ByRef eh As ErrorHandler, _
-                ByRef st As ExcelStateManager)
+Public Sub Init(ByRef lg As LogHelper, ByRef eh As ErrorHandler, ByRef st As ExcelStateManager)
     Set logger = lg
     Set errHandler = eh
     Set state = st
@@ -46,7 +45,6 @@ Public Function ReadSupervisorData(ByVal filePath As String, _
     Const SUPERVISOR_CELL As String = "J7"
     Const END_MARKER_COL As String = "I"
 
-    ' --- Validate file ---
     If Dir(filePath) = "" Then
         logger.Warn "File not found: " & filePath
         Exit Function
@@ -84,7 +82,7 @@ Public Function ReadSupervisorData(ByVal filePath As String, _
 
         For Each key In colMap.Keys
             Dim srcCol As String
-            srcCol = FindColumnByHeader(ws, key)
+            srcCol = Utils.FindColumnByHeader(ws, key)
             If srcCol <> "" Then
                 tempRow(idx) = ws.Range(srcCol & i).Value
             Else
@@ -92,7 +90,6 @@ Public Function ReadSupervisorData(ByVal filePath As String, _
             End If
             idx = idx + 1
         Next key
-
      
         Call Utils.NormaliseLineAndShift(lineName, shiftName)
    
@@ -101,7 +98,6 @@ Public Function ReadSupervisorData(ByVal filePath As String, _
         tempRow(idx) = shiftName: idx = idx + 1       
         tempRow(idx) = supervisor
 
-
         dataList.Add tempRow
         i = i + 1
         If i > 2000 Then
@@ -109,6 +105,7 @@ Public Function ReadSupervisorData(ByVal filePath As String, _
             Exit Do
         End If
     Loop
+
     Set ReadSupervisorData = dataList
     logger.Success "Collected " & dataList.Count & " valid rows from " & wb.Name
     wb.Close SaveChanges:=False
@@ -122,18 +119,10 @@ ERR_HANDLER:
     Resume Next
 End Function
 
-Private Function ColLetterToNum(ByVal colLetter As String) As Long
-    Dim i As Long, n As Long
-    colLetter = UCase$(Trim$(colLetter))
-    For i = 1 To Len(colLetter)
-        n = n * 26 + (Asc(Mid$(colLetter, i, 1)) - 64)
-    Next
-    ColLetterToNum = n
-End Function
-
 Public Sub WriteToMaster(ByRef rows As Collection, _
                          ByVal masterPath As String, _
                          ByRef defaultColMap As Object)
+
     On Error GoTo ERR_HANDLER
 
     Dim masterWB As Workbook, masterWS As Worksheet
@@ -177,14 +166,14 @@ Public Sub WriteToMaster(ByRef rows As Collection, _
 
         For Each key In activeMap.Keys
             dstCol = CStr(activeMap(key))
-            masterWS.Cells(lastRowDst, ColLetterToNum(dstCol)).Value = rowArr(idx)
+            masterWS.Cells(lastRowDst, Utils.ColLetterToNum(dstCol)).Value = rowArr(idx)'
             idx = idx + 1
         Next key
 
-        masterWS.Cells(lastRowDst, ColLetterToNum(DEST_DATE_COL)).Value = rowArr(idx): idx = idx + 1
-        masterWS.Cells(lastRowDst, ColLetterToNum(DEST_LINE_COL)).Value = rowArr(idx): idx = idx + 1
-        masterWS.Cells(lastRowDst, ColLetterToNum(DEST_SHIFT_COL)).Value = rowArr(idx): idx = idx + 1
-        masterWS.Cells(lastRowDst, ColLetterToNum(DEST_SUPERVISOR_COL)).Value = rowArr(idx)
+        masterWS.Cells(lastRowDst, Utils.ColLetterToNum(DEST_DATE_COL)).Value = rowArr(idx): idx = idx + 1'
+        masterWS.Cells(lastRowDst, Utils.ColLetterToNum(DEST_LINE_COL)).Value = rowArr(idx): idx = idx + 1'
+        masterWS.Cells(lastRowDst, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = rowArr(idx): idx = idx + 1'
+        masterWS.Cells(lastRowDst, Utils.ColLetterToNum(DEST_SUPERVISOR_COL)).Value = rowArr(idx)'
 
         lastRowDst = lastRowDst + 1
     Next i
@@ -205,28 +194,3 @@ ERR_HANDLER:
     errHandler.HandleError "ReadYESheet", "WriteToMaster", Erl
     Resume CLEANUP
 End Sub
-
-
-
-Private Function FindColumnByHeader(ws As Worksheet, headerName As Variant) As String
-    Dim headerRow As Long: headerRow = 8
-    Dim c As Long, lastCol As Long
-    lastCol = ws.Cells(headerRow, ws.Columns.Count).End(xlToLeft).Column
-
-    For c = 1 To lastCol
-        If Trim(CStr(ws.Cells(headerRow, c).Value)) = headerName Then
-            FindColumnByHeader = ColumnLetterFromNumber(c)
-            Exit Function
-        End If
-    Next c
-End Function
-
-Private Function ColumnLetterFromNumber(ByVal colNum As Long) As String
-    ' Converts column number (e.g., 2) → letter (B)
-    Dim colLetter As String
-    colLetter = Split(Cells(1, colNum).Address(True, False), "$")(0)
-    ColumnLetterFromNumber = colLetter
-End Function
-
-
-    

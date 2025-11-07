@@ -26,7 +26,6 @@ Private slicingCtrl As SlicingImportController
 
 Private runStart As Date
 
-
 Public Sub RunImport()
     On Error GoTo ERR_HANDLER
     runStart = Now

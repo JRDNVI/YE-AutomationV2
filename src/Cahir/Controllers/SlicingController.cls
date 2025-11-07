@@ -11,58 +11,68 @@ Option Explicit
 ' Handles import of all slicing line data
 ' (Line 1, Line 2 & 3, Line 4) into the
 ' Master Yield & Efficiency workbook using
-' the ReadYESheet helper.
+' the ReadYESheet and ReadYEDowntime helpers.
 ' ===========================================
 
-' Dependencies 
+' Dependencies
 Private config As ConfigCahir
 Private logger As LogHelper
 Private errHandler As ErrorHandler
 Private state As ExcelStateManager
-Private yeHelper As ReadYESheet  
-
+Private yeHelper As ReadYESheet
+Private downtimeHelper As ReadYEDowntime
 
 Private masterPath As String
+Private downtimePath As String
 Private supervisorRoot As String
 Private targetDate As Date
 
 
-' Initialise Dependencies
 Public Sub Init(ByRef cfg As ConfigCahir, _
                 ByRef lg As LogHelper, _
                 ByRef eh As ErrorHandler, _
                 ByRef st As ExcelStateManager)
+
     Set config = cfg
     Set logger = lg
     Set errHandler = eh
     Set state = st
 
     masterPath = config.GetPath("master_file")
+    downtimePath = config.GetPath("master_downtime_file")
     supervisorRoot = config.GetPath("supervisor_root")
     targetDate = config.GetTargetDate
 
     Set yeHelper = New ReadYESheet
+    Set downtimeHelper = New ReadYEDowntime
+
     yeHelper.Init logger, errHandler, state
+    downtimeHelper.Init logger, errHandler, state
 End Sub
+
 
 Public Sub Run()
     On Error GoTo ERR_HANDLER
+    Dim startTime As Single: startTime = Timer
 
     logger.Info "Slicing Import Started..."
+    logger.Info "Target Date: " & Format(targetDate, "dd/mm/yyyy")
 
-    Dim allRows As New Collection     ' Collects everything across all lines
-    Dim lineName As Variant
-    Dim shift As Variant
+    Dim allYERows As New Collection
+    Dim allDowntimeRows As New Collection
+
+    Dim lineName As Variant, shift As Variant
     Dim filePath As String
-    Dim colMap As Object
-    Dim rows As Collection
-    Dim r As Variant
+    Dim colMap As Object, downtimeMap As Object
+    Dim rows As Collection, downtimeRows As Collection
+    Dim row As Variant, downtimeRow As Variant
 
-    ' --- Process all lines and shifts ---
     For Each lineName In config.GetLines
         logger.Info "Processing " & lineName
 
         Set colMap = config.GetLineMap(lineName)
+        Set downtimeMap = config.GetLineProductionMap(lineName)
+
         If colMap Is Nothing Then
             logger.Warn "No column mapping found for " & lineName
             GoTo NEXT_LINE
@@ -72,23 +82,29 @@ Public Sub Run()
             filePath = BuildSupervisorPath(lineName, shift)
             logger.Info "Checking file: " & filePath
 
-            If Dir(filePath) = "" Then
+            If Dir(filePath, vbNormal) = "" Then
                 logger.Warn "File not found: " & filePath
                 GoTo CONTINUE_SHIFT
             End If
 
-            ' --- Read data for this shift ---
-            Set rows = yeHelper.ReadSupervisorData(filePath, lineName, shift, targetDate, colMap)
+           ' Set rows = yeHelper.ReadSupervisorData(filePath, lineName, shift, targetDate, colMap)
+            Set downtimeRows = downtimeHelper.ReadDowntime(filePath, lineName, shift, targetDate, downtimeMap)
 
             If Not rows Is Nothing And rows.Count > 0 Then
-                logger.Info "Collected " & rows.Count & " rows for " & lineName & " - " & shift
+                logger.Success "Collected " & rows.Count & " yield rows from " & Mid(filePath, InStrRev(filePath, "\") + 1)
 
-                ' Append all shift data to main list
+                Dim r As Variant
                 For Each r In rows
-                    allRows.Add r
+                    allYERows.Add r
                 Next r
-            Else
-                logger.Warn lineName & " - " & shift & ": no valid data found."
+            End If
+
+            If Not downtimeRows Is Nothing And downtimeRows.Count > 0 Then
+                Dim dr As Variant
+                For Each dr In downtimeRows
+                    allDowntimeRows.Add dr
+                Next dr
+                logger.Success "Collected " & downtimeRows.Count & " downtime rows."
             End If
 
 CONTINUE_SHIFT:
@@ -97,15 +113,26 @@ CONTINUE_SHIFT:
 NEXT_LINE:
     Next lineName
 
-    ' --- One single write at the end ---
-    If allRows.Count > 0 Then
-        yeHelper.WriteToMaster allRows, masterPath, config.GetLineMap("Line 1")
-        logger.Success "Slicing Import Completed: " & allRows.Count & " total rows written."
+    ' Write yield data
+   ' If allYERows.Count > 0 Then
+    '    yeHelper.WriteToMaster allYERows, masterPath, config.GetLineMap("Line 1")
+    '    logger.Success "Wrote " & allYERows.Count & " yield rows to master."
+   ' Else
+   '     logger.Warn "No yield data collected from any line or shift."
+   ' End If
+
+    ' Write downtime data
+    If allDowntimeRows.Count > 0 Then
+        downtimeHelper.WriteToMaster allDowntimeRows, downtimePath, config.GetLineProductionMap("Line 1")
+        logger.Success "Wrote " & allDowntimeRows.Count & " downtime rows to master."
     Else
-        logger.Warn "No data collected from any line or shift."
+        logger.Warn "No downtime data collected from any line or shift."
     End If
 
+    logger.Success "Slicing Import Completed: " & allYERows.Count & " total yield rows, " & allDowntimeRows.Count & " downtime rows."
+    logger.Info "Total runtime: " & Format((Timer - startTime) / 60, "0.00") & " minutes."
     Exit Sub
+
 
 ERR_HANDLER:
     errHandler.HandleError "SlicingImportController", "Run", Erl
@@ -114,21 +141,16 @@ ERR_HANDLER:
 End Sub
 
 
-
-
-Private Function BuildSupervisorPath(ByVal lineName As String, _
-                                     ByVal shift As String) As String
-    Dim yearStr As String
-    Dim monthStr As String
-    Dim folderPath As String
-    Dim fileName As String
+Public Function BuildSupervisorPath(ByVal lineName As String, _
+                                    ByVal shift As String) As String
+    Dim yearStr As String, monthStr As String
+    Dim folderPath As String, fileName As String
 
     yearStr = Format(Year(targetDate), "0000")
     monthStr = Format(targetDate, "mmmm")
 
     ' Folder structure: <root>\<shift>\<line>\<year>\<month>\
-    folderPath = supervisorRoot & "\" & shift & "\" & lineName & "\" & yearStr & "\" & monthStr & "\"
-
+    folderPath = supervisorRoot & shift & "\" & lineName & "\" & yearStr & "\" & monthStr & "\"
     fileName = Format(targetDate, "dd.mm.yyyy") & ".xlsx"
 
     BuildSupervisorPath = folderPath & fileName
