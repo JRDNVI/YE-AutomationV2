@@ -18,25 +18,21 @@ Private prevAskToUpdateLinks As Boolean
 Private stateActive As Boolean
 
 
-' Initialise with current application
 Public Sub Init(ByRef xlApp As Excel.Application)
     Set app = xlApp
 End Sub
 
 
-' Disable volatile features for automation
 Public Sub DisableAll(Optional ByVal showInfo As Boolean = True)
     On Error Resume Next
 
     If app Is Nothing Then Set app = Application
 
-    ' Store current state
     prevScreenUpdating = app.ScreenUpdating
     prevDisplayAlerts = app.DisplayAlerts
     prevEnableEvents = app.EnableEvents
     prevAskToUpdateLinks = app.AskToUpdateLinks
 
-    ' Apply performance/quiet mode
     app.ScreenUpdating = False
     app.DisplayAlerts = False
     app.EnableEvents = False
@@ -49,9 +45,6 @@ Public Sub DisableAll(Optional ByVal showInfo As Boolean = True)
     End If
 End Sub
 
-
-
-' Restore previous state
 Public Sub RestoreAll(Optional ByVal showInfo As Boolean = True)
     On Error Resume Next
 
@@ -70,7 +63,6 @@ Public Sub RestoreAll(Optional ByVal showInfo As Boolean = True)
     End If
 End Sub
 
-' Safe cleanup (for use in Finally blocks)
 Public Sub Dispose()
     On Error Resume Next
     RestoreAll False

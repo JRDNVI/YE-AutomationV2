@@ -1,6 +1,6 @@
 VERSION 1.0 CLASS
 BEGIN
-  MultiUse = -1  'True
+  MultiUse = -1 
 END
 Attribute VB_Name = "ReadWriteCuringHallYE"
 Option Explicit
@@ -28,7 +28,6 @@ Public Sub ReadThermoData(ByVal sourcePath As String, _
     On Error GoTo EH
     logger.Info "Opening thermo file: " & sourcePath
 
-    ' --- Open source workbook
     Application.DisplayAlerts = False
     Application.AskToUpdateLinks = False
     Set wb = Workbooks.Open(sourcePath, UpdateLinks:=0, ReadOnly:=True)
@@ -39,7 +38,7 @@ Public Sub ReadThermoData(ByVal sourcePath As String, _
     Set dataList = New Collection
     i = START_ROW
 
-    ' --- Read rows until column C is 0 or blank
+    ' Read rows until column C is 0 or blank
     Do While Not IsEmpty(ws.Range("C" & i).Value) And ws.Range("C" & i).Value <> 0
         ReDim tempRow(LBound(colMap) To UBound(colMap))
         For c = LBound(colMap) To UBound(colMap)
@@ -47,13 +46,12 @@ Public Sub ReadThermoData(ByVal sourcePath As String, _
         Next c
         dataList.Add tempRow
         i = i + 1
-        If i > 2000 Then Exit Do  ' safety stop
+        If i > 2000 Then Exit Do  
     Loop
 
     wb.Close False
     logger.Info dataList.Count & " rows collected from " & shiftName
 
-    ' --- Write to Master workbook
     WriteThermoToMaster dataList, shiftName, colMap, masterPath, logger, targetDate
 
     Exit Sub
@@ -132,7 +130,6 @@ Public Sub ReadSmokingData(ByVal sourcePath As String, _
     Set dataList = New Collection
     i = START_ROW_SMOKE
 
-    ' --- Read rows until column C is 0 or blank
     Do While True
         cVal = ws.Range("C" & i).Value
 
@@ -173,6 +170,7 @@ Private Sub WriteSmokingToMaster(ByVal dataList As Collection, _
 
     Dim wb As Workbook, ws As Worksheet
     Dim nextRow As Long, dataRow As Variant, c As Long, count As Long
+    Dim prevCycle As Variant, currentCycle As Variant
 
     On Error GoTo EH
 
@@ -182,20 +180,39 @@ Private Sub WriteSmokingToMaster(ByVal dataList As Collection, _
     nextRow = ws.Cells(ws.Rows.Count, "A").End(xlUp).Row + 1
 
     For Each dataRow In dataList
+
         With ws
             .Range("A" & nextRow).Value = targetDate
-            .Range("D" & nextRow).Value = shiftName
+
+            Select Case LCase$(shiftName)
+                Case "day shift":   .Range("D" & nextRow).Value = "Days"
+                Case "night shift": .Range("D" & nextRow).Value = "Evenings"
+                Case Else:          .Range("D" & nextRow).Value = shiftName
+            End Select
 
             For c = LBound(colMap) To UBound(colMap)
                 .Range(colMap(c)(1) & nextRow).Value = dataRow(c)
             Next c
         End With
+
+        
+        currentCycle = ws.Range("C" & nextRow).Value  
+
+        If count > 0 Then
+            If currentCycle <> prevCycle Then
+                ws.Range("K" & (nextRow - 1)).Value = 1996
+            End If
+        End If
+
+        prevCycle = currentCycle
         nextRow = nextRow + 1
         count = count + 1
     Next dataRow
 
+    ws.Range("K" & (nextRow - 1)).Value = 1996
+
     wb.Close SaveChanges:=True
-    logger.Info count & " smoking rows written to master."
+    logger.Info count & " smoking rows written to master (with Target Weight applied)."
     Exit Sub
 
 EH:

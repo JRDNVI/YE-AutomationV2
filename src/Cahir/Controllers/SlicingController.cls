@@ -39,6 +39,7 @@ Public Sub Init(ByRef cfg As ConfigCahir, _
     masterPath = config.GetPath("master_file")
     downtimePath = config.GetPath("master_downtime_file")
     supervisorRoot = config.GetPath("supervisor_root")
+    
     targetDate = config.GetTargetDate
 
     Set yeHelper = New ReadYESheet

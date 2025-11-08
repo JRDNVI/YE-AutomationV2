@@ -21,6 +21,7 @@ Private errHandler As ErrorHandler
 Private state As ExcelStateManager
 Private slicingCtrl As SlicingImportController
 Private curingCtrl As CuringImportController
+Private summaryCtrl As SummaryImportController
 Private runStart As Date
 
 Public Sub RunImport()
@@ -48,6 +49,31 @@ Public Sub RunImport()
     Set curingCtrl = New CuringImportController
     curingCtrl.Init config, logger, errHandler, state   
     curingCtrl.Run
+
+    Set summaryCtrl = New SummaryImportController
+    summaryCtrl.Init config, logger, errHandler, state
+    summaryCtrl.Run
+
+    Dim masterPath As String, newPath As String
+    masterPath = config.GetPath("master_file")
+    newPath = Replace(masterPath, ".xlsb", ".xlsm")
+
+    logger.Info "Creating deployed XLSM version..."
+
+    On Error Resume Next
+    Kill newPath
+    On Error GoTo 0
+
+    Dim wbCopy As Workbook 
+    Set wbCopy = Workbooks.Open(masterPath, ReadOnly:=False)
+
+
+    wbCopy.SaveAs Filename:=newPath, FileFormat:=xlOpenXMLWorkbookMacroEnabled
+
+    wbCopy.Close SaveChanges:=True
+
+    logger.Success "Deployment copy created: " & newPath
+
 
     state.RestoreAll
     logger.Info "Excel state restored to normal."

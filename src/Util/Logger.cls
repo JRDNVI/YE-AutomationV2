@@ -34,12 +34,10 @@ Private Sub WriteLine(ByVal level As String, ByVal message As String)
     Dim fullMessage As String
     fullMessage = "[" & ts & "] [" & UCase(level) & "] " & message
 
-    ' write to PowerShell terminal
     On Error Resume Next
     CreateObject("Scripting.FileSystemObject").OpenTextFile("CON", 8, True).WriteLine fullMessage
     On Error GoTo 0
 
-    ' Log file
     If logSessionActive Then
         Dim fso As Object, file As Object
         Set fso = CreateObject("Scripting.FileSystemObject")
@@ -49,8 +47,6 @@ Private Sub WriteLine(ByVal level As String, ByVal message As String)
     End If
 End Sub
 
-
-' Public methods
 Public Sub Info(ByVal message As String)
     WriteLine "INFO", message
 End Sub

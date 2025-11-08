@@ -275,7 +275,11 @@ Public Sub WriteToMaster(ByRef rows As Collection, _
         Next key
 
       
-        masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_DATE_COL)).Value = rowArr("Date")
+        With masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_DATE_COL))
+            .Value = CDate(rowArr("Date"))
+            .NumberFormat = "dd/mm/yyyy"
+        End With
+        
         masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_LINE_COL)).Value = rowArr("Line")
         masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = rowArr("Shift")
 

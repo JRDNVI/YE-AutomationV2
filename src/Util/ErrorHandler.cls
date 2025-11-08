@@ -9,7 +9,6 @@ Option Explicit
 Private logger As LogHelper
 Private showMsgBox As Boolean
 
-' Initialise
 Public Sub Init(ByRef logRef As LogHelper, Optional ByVal displayMsgBox As Boolean = False)
     Set logger = logRef
     showMsgBox = displayMsgBox
@@ -47,7 +46,6 @@ Public Sub HandleError(ByVal moduleName As String, _
         Debug.Print msg
     End If
 
-    ' Optional on-screen alert
     If showMsgBox Then
         MsgBox msg, vbCritical + vbOKOnly, "Error"
     End If
@@ -55,10 +53,6 @@ Public Sub HandleError(ByVal moduleName As String, _
     Err.Clear
 End Sub
 
-
-
-' RaiseError
-' Use this to raise custom/controlled exceptions
 Public Sub RaiseError(ByVal moduleName As String, _
                       ByVal procedureName As String, _
                       ByVal description As String, _

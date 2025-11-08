@@ -12,10 +12,6 @@ if (-not (Test-Path $tempDir)) { New-Item -ItemType Directory -Path $tempDir | O
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $tempFile  = Join-Path $tempDir ("TempHost_" + $timestamp + ".xlsm")
 
-Write-Host "`n========================================================"
-Write-Host "Creating temporary Excel host workbook: $tempFile"
-Write-Host "========================================================"
-
 $excel = New-Object -ComObject Excel.Application
 $excel.Visible = $false
 $excel.DisplayAlerts = $false
@@ -33,9 +29,9 @@ foreach ($file in $sourceFiles) {
     catch { Write-Host "[WARN] Failed to import $($file.Name): $($_.Exception.Message)" }
 }
 
-Write-Host "Running macro: $macroName"
+Write-Host "Running Import: $macroName"
 
-try   { $excel.Run($macroName); Write-Host "[INFO] Macro executed successfully." }
+try   { $excel.Run($macroName); Write-Host "`n[INFO] Macro executed successfully." }
 catch { Write-Host "[ERROR] $($_.Exception.Message)" }
 
 $workbook.Close($false)
@@ -52,9 +48,9 @@ try {
     Write-Host "[WARN] Could not delete temp file (possibly locked)."
 }
 
-Write-Host "`n==============================================="
-Write-Host "Supervisor import completed from temp workbook."
-Write-Host "==============================================="
+Write-Host "`nSupervisor Import Completed"
+Write-Host "Created Backup of Master File and Deployable XSLM Version of Master."
+
 
 $latestLog = Get-ChildItem -Path $logFolder -Filter *.txt | 
              Sort-Object LastWriteTime -Descending | 

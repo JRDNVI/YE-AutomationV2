@@ -6,7 +6,7 @@ Attribute VB_Name = "CuringImportController"
 Option Explicit
 
 ' ===========================================
-' CONTROLLER: CuringImportController
+' CLASS: CuringImportController
 ' ===========================================
 
 Private config As ConfigCahir
@@ -19,6 +19,7 @@ Public Sub Init(ByRef cfg As ConfigCahir, _
                 ByRef lg As LogHelper, _
                 ByRef eh As ErrorHandler, _
                 ByRef st As ExcelStateManager)
+                
     Set config = cfg
     Set logger = lg
     Set errHandler = eh

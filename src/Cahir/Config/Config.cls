@@ -43,6 +43,8 @@ private LineOneBreakdown As Object
 private LineTwoThreeBreakdown As Object
 private LineFourBreakdown As Object
 
+private PivotTableNames As Object
+
 Private Sub Class_Initialize()
 
     CuringPrefixes = Array("Smoking & Heat Treating Day By Hour Sheet", "Thermo Day By Hour Sheet.")
@@ -188,6 +190,12 @@ Private Sub Class_Initialize()
         Array("J", "I") _
     )
 
+    Set PivotTableNames = CreateObject("Scripting.Dictionary")
+
+    PivotTableNames.Add "Daily Summary Lines Slicing", Array("PivotTable8")
+    PivotTableNames.Add "Daily Summary Curing", Array("PivotTable5", "PivotTable2")
+    PivotTableNames.Add "Report Summary", Array("PivotTable1")
+
 End Sub
 
 Public Function GetPath(ByVal key As String) As String
@@ -227,6 +235,10 @@ Public Property Get GetLineBreakdownMap(ByVal lineName As String) As Object
     End Select
 End Property
 
+Public Property Get GetPivotTableName() As Object
+   Set GetPivotTableName = PivotTableNames
+End Property
+
 Public Property Get GetShifts() As Variant
     GetShifts = Shifts
 End Property
@@ -245,11 +257,11 @@ End Property
 
 Public Property Get GetThermoColumns() As Variant
     GetThermoColumns = ThermoColumns
-End Function
+End Property
 
 Public Property Get GetSmokingColumns() As Variant
     GetSmokingColumns = SmokingColumns
-End Function
+End Property
 
 
  
