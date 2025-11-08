@@ -14,7 +14,6 @@ Option Explicit
 ' the ReadYESheet and ReadYEDowntime helpers.
 ' ===========================================
 
-' Dependencies
 Private config As ConfigCahir
 Private logger As LogHelper
 Private errHandler As ErrorHandler
@@ -26,7 +25,6 @@ Private masterPath As String
 Private downtimePath As String
 Private supervisorRoot As String
 Private targetDate As Date
-
 
 Public Sub Init(ByRef cfg As ConfigCahir, _
                 ByRef lg As LogHelper, _
@@ -56,14 +54,13 @@ Public Sub Run()
     Dim startTime As Single: startTime = Timer
 
     logger.Info "Slicing Import Started..."
-    logger.Info "Target Date: " & Format(targetDate, "dd/mm/yyyy")
 
     Dim allYERows As New Collection
     Dim allDowntimeRows As New Collection
 
     Dim lineName As Variant, shift As Variant
     Dim filePath As String
-    Dim colMap As Object, downtimeMap As Object
+    Dim colMap As Object, downtimeMap As Object, breakdownMap As Object
     Dim rows As Collection, downtimeRows As Collection
     Dim row As Variant, downtimeRow As Variant
 
@@ -72,6 +69,7 @@ Public Sub Run()
 
         Set colMap = config.GetLineMap(lineName)
         Set downtimeMap = config.GetLineProductionMap(lineName)
+        set breakdownMap = config.GetLineBreakdownMap(lineName)
 
         If colMap Is Nothing Then
             logger.Warn "No column mapping found for " & lineName
@@ -87,8 +85,8 @@ Public Sub Run()
                 GoTo CONTINUE_SHIFT
             End If
 
-           ' Set rows = yeHelper.ReadSupervisorData(filePath, lineName, shift, targetDate, colMap)
-            Set downtimeRows = downtimeHelper.ReadDowntime(filePath, lineName, shift, targetDate, downtimeMap)
+            Set rows = yeHelper.ReadSupervisorData(filePath, lineName, shift, targetDate, colMap)
+            Set downtimeRows = downtimeHelper.ReadDowntime(filePath, lineName, shift, targetDate, downtimeMap, breakdownMap)
 
             If Not rows Is Nothing And rows.Count > 0 Then
                 logger.Success "Collected " & rows.Count & " yield rows from " & Mid(filePath, InStrRev(filePath, "\") + 1)
@@ -114,23 +112,22 @@ NEXT_LINE:
     Next lineName
 
     ' Write yield data
-   ' If allYERows.Count > 0 Then
-    '    yeHelper.WriteToMaster allYERows, masterPath, config.GetLineMap("Line 1")
-    '    logger.Success "Wrote " & allYERows.Count & " yield rows to master."
-   ' Else
-   '     logger.Warn "No yield data collected from any line or shift."
-   ' End If
+    If allYERows.Count > 0 Then
+        yeHelper.WriteToMaster allYERows, masterPath, config.GetLineMap("Line 1")
+        logger.Success "Wrote " & allYERows.Count & " yield rows to master."
+    Else
+        logger.Warn "No yield data collected from any line or shift."
+    End If
 
     ' Write downtime data
     If allDowntimeRows.Count > 0 Then
-        downtimeHelper.WriteToMaster allDowntimeRows, downtimePath, config.GetLineProductionMap("Line 1")
+        downtimeHelper.WriteToMaster allDowntimeRows, downtimePath, config.GetLineProductionMap("Line 1"), config.GetLineBreakdownMap("Line 1")
         logger.Success "Wrote " & allDowntimeRows.Count & " downtime rows to master."
     Else
         logger.Warn "No downtime data collected from any line or shift."
     End If
 
     logger.Success "Slicing Import Completed: " & allYERows.Count & " total yield rows, " & allDowntimeRows.Count & " downtime rows."
-    logger.Info "Total runtime: " & Format((Timer - startTime) / 60, "0.00") & " minutes."
     Exit Sub
 
 
@@ -141,8 +138,7 @@ ERR_HANDLER:
 End Sub
 
 
-Public Function BuildSupervisorPath(ByVal lineName As String, _
-                                    ByVal shift As String) As String
+Public Function BuildSupervisorPath(ByVal lineName As String, ByVal shift As String) As String
     Dim yearStr As String, monthStr As String
     Dim folderPath As String, fileName As String
 

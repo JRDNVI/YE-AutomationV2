@@ -14,7 +14,6 @@ Option Explicit
 Private logFilePath As String
 Private logSessionActive As Boolean
 
-' Initialise new log session 
 Public Sub StartSession(ByVal logFolder As String)
     Dim fso As Object
     Set fso = CreateObject("Scripting.FileSystemObject")
@@ -28,7 +27,6 @@ Public Sub StartSession(ByVal logFolder As String)
     Info "Log session started: " & logFilePath
 End Sub
 
-' Core writer 
 Private Sub WriteLine(ByVal level As String, ByVal message As String)
     Dim ts As String
     ts = Format(Now, "yyyy-MM-dd hh:nn:ss")

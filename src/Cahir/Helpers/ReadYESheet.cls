@@ -178,8 +178,6 @@ Public Sub WriteToMaster(ByRef rows As Collection, _
         lastRowDst = lastRowDst + 1
     Next i
 
-    logger.Success "Wrote " & rows.Count & " rows to master successfully."
-
 CLEANUP:
     On Error Resume Next
     Application.ScreenUpdating = True

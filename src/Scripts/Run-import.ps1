@@ -2,14 +2,13 @@
 # Run-Import.ps1  –  Dynamic VBA Loader + Live Log Streamer
 # ==============================================================
 
-$srcPath   = "C:\Users\coadyj\projects\YE-AutomationV2\src"
-$tempDir   = "C:\Users\coadyj\projects\YE-AutomationV2\Temp"
+$srcPath   =  "D:\project\YE-AutomationV2\src"
+$tempDir   =  "D:\project\YE-AutomationV2\Temp"
+$logFolder = "D:\project\YE-AutomationV2\Logs"
 $macroName = "ImportDailyYEData"
 
-# --- Ensure temp dir exists ---
 if (-not (Test-Path $tempDir)) { New-Item -ItemType Directory -Path $tempDir | Out-Null }
 
-# --- Temp workbook path ---
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $tempFile  = Join-Path $tempDir ("TempHost_" + $timestamp + ".xlsm")
 
@@ -22,12 +21,11 @@ $excel.Visible = $false
 $excel.DisplayAlerts = $false
 
 $workbook = $excel.Workbooks.Add()
-$workbook.SaveAs($tempFile, 52)   # .xlsm
+$workbook.SaveAs($tempFile, 52)
 
 Start-Sleep -Seconds 2
 $vbaProject  = $workbook.VBProject
 $sourceFiles = Get-ChildItem -Path $srcPath -Recurse -Include *.bas, *.cls
-
 
 foreach ($file in $sourceFiles) {
     Write-Host "Importing $($file.Name)"
@@ -45,7 +43,6 @@ $excel.Quit()
 [System.Runtime.InteropServices.Marshal]::ReleaseComObject($workbook) | Out-Null
 [System.Runtime.InteropServices.Marshal]::ReleaseComObject($excel)    | Out-Null
 
-
 try {
     if (Test-Path $tempFile) {
         Remove-Item $tempFile -Force
@@ -55,6 +52,17 @@ try {
     Write-Host "[WARN] Could not delete temp file (possibly locked)."
 }
 
-Write-Host "`n========================================================"
-Write-Host "Supervisor import completed from dynamic temp workbook."
-Write-Host "========================================================"
+Write-Host "`n==============================================="
+Write-Host "Supervisor import completed from temp workbook."
+Write-Host "==============================================="
+
+$latestLog = Get-ChildItem -Path $logFolder -Filter *.txt | 
+             Sort-Object LastWriteTime -Descending | 
+             Select-Object -First 1
+
+if ($latestLog) {
+    Write-Host "`nOpening latest log: $($latestLog.Name)"
+    Invoke-Item $latestLog.FullName
+} else {
+    Write-Host "`n[WARN] No log files found in $logFolder"
+}

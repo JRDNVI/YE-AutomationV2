@@ -10,15 +10,26 @@ Option Explicit
 ' Configuration for Cahir automation
 ' ==============================================
 
-Private Const MASTER_FILE As String = "\\Oak-w2k22-dc01\Department\Production\Production\Yields\2025\Yields and Efficiencies 2025 - Cahir.xlsb"
-Private Const MASTER_DOWNTIME_FILE As String = "\\Oak-w2k22-dc01\Department\Production\Production\Yields\2025\Downtime Master File 2025 (New).xlsx"
-Private Const SUPERVISOR_ROOT As String = "\\Oak-w2k22-dc01\Department\Supervisor\"
-Private Const LOG_FOLDER As String = "C:\Users\coadyj\projects\YE-AutomationV2\Logs\"
-Private Const TARGET_DATE As Date = #22/10/2025#
+
+' "\\Oak-w2k22-dc01\Department\Production\Production\Yields\2025\Yields and Efficiencies 2025 - Cahir.xlsb"
+' "\\Oak-w2k22-dc01\Department\Production\Production\Yields\2025\Downtime Master File 2025 (New).xlsx"
+' "\\Oak-w2k22-dc01\Department\Supervisor\"
+' C:\Users\coadyj\projects\YE-AutomationV2\Logs\
+
+Private Const MASTER_FILE As String = "D:\project\OakPark-Data-YE\Master-Data\Yields and Efficiencies 2025 - Cahir.xlsb"
+Private Const MASTER_DOWNTIME_FILE As String = "D:\project\OakPark-Data-YE\Master-Data\Downtime Master File 2025 (New).xlsx"
+Private Const SUPERVISOR_ROOT As String = "D:\project\OakPark-Data-YE\supervisor\"
+Private Const LOG_FOLDER As String = "D:\project\YE-AutomationV2\Logs" 
+Private Const TARGET_DAY As Long = 9
+Private Const TARGET_MONTH As Long = 10
+Private Const TARGET_YEAR As Long = 2025
 
 Private Shifts As Variant
 Private Lines As Variant
 Private CuringPrefixes As Variant
+
+Private ThermoColumns As Variant
+private SmokingColumns As Variant
 
 Private LineOne As Object
 Private LineTwoThree As Object
@@ -28,10 +39,14 @@ Private LineOneProduction As Object
 Private LineTwoThreeProduction As Object
 Private LineFourProduction As Object
 
+private LineOneBreakdown As Object
+private LineTwoThreeBreakdown As Object
+private LineFourBreakdown As Object
+
 Private Sub Class_Initialize()
 
     CuringPrefixes = Array("Smoking & Heat Treating Day By Hour Sheet", "Thermo Day By Hour Sheet.")
-    Shifts = Array("Day Shift Yield & Efficiency", "Night Shift Yield & Efficiency")
+    Shifts = Array("Day Shift", "Night Shift")
     Lines = Array("Line 1", "Line 2 & 3", "Line 4")
 
     Set LineOne = CreateObject("Scripting.Dictionary")
@@ -127,6 +142,51 @@ Private Sub Class_Initialize()
         .Add "Description of Issue", "S"
     End With
 
+    set LineOneBreakdown = CreateObject("Scripting.Dictionary")
+    set LineTwoThreeBreakdown = CreateObject("Scripting.Dictionary")
+    set LineFourBreakdown = CreateObject("Scripting.Dictionary")
+
+    with LineOneBreakdown
+        .Add "Product Code", "C"
+        .Add "total", "G"
+        .Add "Product", "D"
+        .Add "Machine", "R"
+        .Add "Duration of Downtime", "O"
+        .Add "Description of Downtime", "S"
+    end with
+
+    with LineTwoThreeBreakdown
+        .Add "Product Code", "C"
+        .Add "total", "G"
+        .Add "Product", "D"
+        .Add "Machine", "R"
+        .Add "Duration of Downtime", "O"
+        .Add "Description of Downtime", "S"
+    end with
+
+    with LineFourBreakdown
+        .Add "Product Code", "C"
+        .Add "total", "G"
+        .Add "Product", "D"
+        .Add "Machine", "R"
+        .Add "Duration of Downtime", "O"
+        .Add "Description of Downtime", "S"
+    end with
+
+    ThermoColumns = Array( _ 
+        Array("C", "H"), _
+        Array("G", "G"), _
+        Array("H", "D") _
+    )
+
+    SmokingColumns = Array( _
+        Array("B", "G"), _
+        Array("C", "F"), _
+        Array("E", "E"), _
+        Array("A", "C"), _
+        Array("I", "H"), _
+        Array("J", "I") _
+    )
 
 End Sub
 
@@ -156,7 +216,16 @@ Public Property Get GetLineProductionMap(ByVal lineName As String) As Object
         Case "line 4": Set GetLineProductionMap = LineFourProduction
         Case Else: Set GetLineProductionMap = Nothing
     End Select
-End Property   
+End Property
+
+Public Property Get GetLineBreakdownMap(ByVal lineName As String) As Object
+    Select Case LCase(lineName)
+        Case "line 1": Set GetLineBreakdownMap = LineOneBreakdown
+        Case "line 2 & 3": Set GetLineBreakdownMap = LineTwoThreeBreakdown
+        Case "line 4": Set GetLineBreakdownMap = LineFourBreakdown
+        Case Else: Set GetLineBreakdownMap = Nothing
+    End Select
+End Property
 
 Public Property Get GetShifts() As Variant
     GetShifts = Shifts
@@ -171,7 +240,16 @@ Public Property Get GetCuringPrefixes() As Variant
 End Property
 
 Public Property Get GetTargetDate() As Date
-    GetTargetDate = TARGET_DATE
+    GetTargetDate = DateSerial(TARGET_YEAR, TARGET_MONTH, TARGET_DAY)
 End Property
+
+Public Property Get GetThermoColumns() As Variant
+    GetThermoColumns = ThermoColumns
+End Function
+
+Public Property Get GetSmokingColumns() As Variant
+    GetSmokingColumns = SmokingColumns
+End Function
+
 
  

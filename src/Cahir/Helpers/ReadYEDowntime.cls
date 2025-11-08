@@ -8,7 +8,7 @@ Option Explicit
 ' ===========================================
 ' CLASS: ReadYEDowntime
 ' ===========================================
-' Reads downtime/production section from supervisor sheets.
+' Reads downtime/breakdown sections from supervisor sheets.
 ' Second "Product" in column C marks header row.
 ' The column immediately to the left is "Product Code".
 ' Stops reading when "Total" appears in column C.
@@ -21,9 +21,7 @@ Private state As ExcelStateManager
 Private config As ConfigCahir
 Private Utils As Utils
 
-' -------------------------------------------
-' INITIALISE
-' -------------------------------------------
+
 Public Sub Init(ByRef lg As LogHelper, _
                 ByRef eh As ErrorHandler, _
                 ByRef st As ExcelStateManager)
@@ -35,110 +33,164 @@ Public Sub Init(ByRef lg As LogHelper, _
 End Sub
 
 
-' -------------------------------------------
-' READ DOWNTIME SECTION
-' -------------------------------------------
 Public Function ReadDowntime(ByVal filePath As String, _
                              ByVal lineName As String, _
                              ByVal shift As String, _
                              ByVal targetDate As Date, _
-                             ByRef colMap As Object) As Collection
+                             ByRef colMap As Object, _
+                             ByRef breakdownCol As Object) As Collection
     On Error GoTo ERR_HANDLER
 
     Dim wb As Workbook, ws As Worksheet
-    Dim lastRow As Long, r As Long
-    Dim firstProductRow As Long, secondProductRow As Long
-    Dim startRow As Long, headerRow As Long, endRow As Long
+    Dim lastRow As Long, r As Long, lastRow2 As Long, r2 As Long
+    Dim firstProductRow As Long, secondProductRow As Long, thirdProductRow As Long
+    Dim startRow As Long, downtimeHeaderRow As Long, breakdownHeaderRow As Long, endRow As Long, thirdStartRow As Long, thirdEndRow As Long
     Dim rows As New Collection
     Dim valCheck As String
 
-    ' --- Open workbook ---
     Application.DisplayAlerts = False
     Application.AskToUpdateLinks = False
     Set wb = Workbooks.Open(filePath, UpdateLinks:=0, ReadOnly:=True)
     Set ws = wb.Sheets("Yields and Efficiency")
-    logger.Info "In function"
 
-    ' --- Find two "Product" rows in column C (robust to casing / spaces) ---
     lastRow = ws.Cells(ws.Rows.Count, "C").End(xlUp).Row
     logger.Info "Scanning column C (1-" & lastRow & ") for Product headers..."
 
+    Dim productRows(1 To 3) As Long
+    Dim count As Long: count = 0
+
+    ' Find first, second, third "Product" header in Column C
     For r = 1 To lastRow
-        On Error Resume Next
         valCheck = Trim(LCase(ws.Cells(r, "C").MergeArea.Cells(1, 1).Value))
-        On Error GoTo ERR_HANDLER
         If valCheck = "product" Then
-            If firstProductRow = 0 Then
-                firstProductRow = r
-            Else
-                secondProductRow = r
-                Exit For
-            End If
+            count = count + 1
+            If count <= 3 Then productRows(count) = r
+            If count = 3 Then Exit For
         End If
     Next r
+
+    firstProductRow = productRows(1)
+    secondProductRow = productRows(2)
+    thirdProductRow = productRows(3)
 
     If secondProductRow = 0 Then
         logger.Warn "Downtime header not found in " & filePath
         GoTo CLEANUP
     End If
 
-    headerRow = secondProductRow
-    startRow = headerRow + 1
+   ' Downtime section
+    downtimeHeaderRow = secondProductRow
+    startRow = downtimeHeaderRow + 1
+    endRow = FindSectionEnd(ws, startRow, "B", lastRow)
 
+    logger.Info "Downtime section: header=" & downtimeHeaderRow & ", first=" & startRow & ", last=" & endRow
 
-    endRow = lastRow
-    Dim valB As Variant
-    For r = startRow To lastRow
-        On Error Resume Next
-        valB = ws.Cells(r, "B").MergeArea.Cells(1, 1).Value
-        On Error GoTo 0
+    '  Breakdown section
+    If thirdProductRow > 0 Then
+        breakdownHeaderRow = thirdProductRow
+        thirdStartRow = thirdProductRow + 1
+        thirdEndRow = FindSectionEnd(ws, thirdStartRow, "I", lastRow)
 
-        If Trim(valB) = "" Or Trim(LCase(valB)) = "0" Then
-            endRow = r - 1
-            logger.Info "Stopped at first blank/0 in column B at row " & r
-            Exit For
+        If thirdStartRow <= thirdEndRow Then
+            logger.Info "Breakdown Section: header=" & breakdownHeaderRow & ", first=" & thirdStartRow & ", last=" & thirdEndRow
+        Else
+            logger.Info "Breakdown Section present but contains **no rows** — skipped."
         End If
-    Next r
+    End If
 
-    logger.Info "Downtime section: header=" & headerRow & _
-                ", first=" & startRow & ", last=" & endRow
 
-    ' --- Dynamic column mapping ---
-    Dim prodCol As Long: prodCol = ws.Range("C" & headerRow).Column
-    Dim productCodeCol As Long: productCodeCol = prodCol - 1
-    If colMap.Exists("Product Code") Then colMap("Product Code") = Split(ws.Cells(1, productCodeCol).Address(True, False), "$")(0)
-    If colMap.Exists("Product") Then colMap("Product") = Split(ws.Cells(1, prodCol).Address(True, False), "$")(0)
+    Dim fixedMap As Object: Set fixedMap = CreateObject("Scripting.Dictionary")
+    Dim k As Variant
+    For Each k In colMap.Keys
+        fixedMap(Trim(LCase(k))) = colMap(k)
+    Next k
+    Set colMap = fixedMap
 
-    ' --- Extract rows ---
+    Dim c As Long, hdr As String, colAddr As String, colLetter As String
+    Dim cell As Range
+
+    For c = 1 To ws.Cells(downtimeHeaderRow, ws.Columns.Count).End(xlToLeft).Column
+        Set cell = ws.Cells(downtimeHeaderRow, c).MergeArea.Cells(1, 1)
+
+    ' Only map if this cell is the top-left cell of its merge area!!!!!!!!!!!!!!!!!!!!!!!!!!
+        If cell.Address = ws.Cells(downtimeHeaderRow, c).Address Then
+        
+            hdr = Trim(LCase(cell.Value))
+
+            If colMap.Exists(hdr) Then
+                colAddr = cell.Address(False, False)
+                Do While IsNumeric(Right(colAddr, 1))
+                    colAddr = Left(colAddr, Len(colAddr) - 1)
+                Loop
+            
+                colLetter = colAddr
+                colMap(hdr) = colLetter
+            End If
+        End If
+    Next c
+
     For r = startRow To endRow
         Dim entry As Object: Set entry = CreateObject("Scripting.Dictionary")
-        Dim key As Variant, colLetter As String, val As Variant
+        Dim key As Variant
+    
         For Each key In colMap.Keys
             colLetter = colMap(key)
-            On Error Resume Next
-            val = ws.Range(colLetter & r).Value
-            On Error GoTo ERR_HANDLER
-            entry(key) = Trim(CStr(val))
+            entry(key) = Trim(CStr(ws.Range(colLetter & r).MergeArea.Cells(1, 1).Value))
         Next key
+
         entry("Line") = lineName
         entry("Shift") = shift
         entry("SupervisorFile") = Mid(filePath, InStrRev(filePath, "\") + 1)
         entry("Date") = targetDate
         rows.Add entry
 
-        logger.Info " [ROW " & r & "] " & lineName & " | " & shift & _
-                    " | Code: " & entry("Product Code") & _
-                    " | Product: " & entry("Product") & _
-                    " | Time: " & entry("Time") & _
-                    " | Desc: " & Left(entry("Description of Issue"), 60)
     Next r
 
-    If rows.Count > 0 Then
-        logger.Success "Collected " & rows.Count & _
-                       " downtime rows from " & Mid(filePath, InStrRev(filePath, "\") + 1)
-    Else
-        logger.Warn "No downtime rows found in " & filePath
+    ' Read Breakdown Section
+    If thirdProductRow > 0 And thirdStartRow <= thirdEndRow Then
+
+        ' Normalise breakdown column map
+        Dim fixedBreak As Object: Set fixedBreak = CreateObject("Scripting.Dictionary")
+        For Each k In breakdownCol.Keys
+            fixedBreak(Trim(LCase(k))) = breakdownCol(k)
+        Next k
+        Set breakdownCol = fixedBreak
+
+        ' Map headers for breakdown section
+        For c = 1 To ws.Cells(breakdownHeaderRow, ws.Columns.Count).End(xlToLeft).Column
+            Set cell = ws.Cells(breakdownHeaderRow, c).MergeArea.Cells(1, 1)
+
+            If cell.Address = ws.Cells(breakdownHeaderRow, c).Address Then
+                hdr = Trim(LCase(cell.Value))
+                If breakdownCol.Exists(hdr) Then
+                    colAddr = cell.Address(False, False)
+                    Do While IsNumeric(Right(colAddr, 1))
+                        colAddr = Left(colAddr, Len(colAddr) - 1)
+                    Loop
+                    breakdownCol(hdr) = colAddr
+                End If
+            End If
+        Next c
+
+        ' Extract breakdown rows
+        For r = thirdStartRow To thirdEndRow
+            Dim entryB As Object: Set entryB = CreateObject("Scripting.Dictionary")
+        
+            For Each key In breakdownCol.Keys
+                colLetter = breakdownCol(key)
+                entryB(key) = Trim(CStr(ws.Range(colLetter & r).MergeArea.Cells(1, 1).Value))
+            Next key
+
+            entryB("Line") = lineName
+            entryB("Shift") = shift
+            entryB("SupervisorFile") = Mid(filePath, InStrRev(filePath, "\") + 1)
+            entryB("Date") = targetDate
+            entryB("SectionType") = "Breakdown"
+
+            rows.Add entryB
+        Next r
     End If
+
     Set ReadDowntime = rows
 
 CLEANUP:
@@ -155,118 +207,129 @@ ERR_HANDLER:
     Resume CLEANUP
 End Function
 
-
-
-
-' -------------------------------------------
-' WRITE TO MASTER (unchanged)
-' -------------------------------------------
 Public Sub WriteToMaster(ByRef rows As Collection, _
                          ByVal masterPath As String, _
-                         ByRef defaultColMap As Object)
+                         ByRef defaultColMap As Object, _ 
+                         ByRef breakdownColMap As Object)
 
     On Error GoTo ERR_HANDLER
 
     Dim masterWB As Workbook, masterWS As Worksheet
-    Dim lastRowDst As Long, i As Long, idx As Long
-    Dim rowArr As Variant, key As Variant, dstCol As String
-    Dim sheetName As String
-    Dim activeMap As Object
-    Dim lineName As String
+    Dim tbl As ListObject
+    Dim newRow As ListRow
+    Dim i As Long, key As Variant, dstCol As String
+    Dim rowArr As Object, activeMap As Object, lineName As String, dowwntimeType As String
+    Dim machineCol As Long, maintCol As Long
 
     Const DEST_DATE_COL As String = "A"
     Const DEST_LINE_COL As String = "E"
     Const DEST_SHIFT_COL As String = "F"
-    sheetName = "Master Downtime"
 
     logger.Info "WriteToMaster() called — " & rows.Count & " rows pending for write."
+
 
     If rows Is Nothing Or rows.Count = 0 Then
         logger.Warn "No downtime rows to write."
         Exit Sub
     End If
 
-    logger.Info "Opening master workbook: " & masterPath
     Set masterWB = Workbooks.Open(masterPath, UpdateLinks:=0, ReadOnly:=False, Notify:=False)
-
-    logger.Info "Activating sheet: " & sheetName
-    Set masterWS = masterWB.Sheets(sheetName)
-
-    lastRowDst = masterWS.Cells(masterWS.Rows.Count, "A").End(xlUp).Row + 1
-    logger.Info "Writing starts at master row: " & lastRowDst
+    Set masterWS = masterWB.Sheets("Master Downtime")
+    Set tbl = masterWS.ListObjects("Table1") 
 
     Application.ScreenUpdating = False
     Application.Calculation = xlCalculationManual
     Application.EnableEvents = False
 
-    Dim writtenCount As Long
-    writtenCount = 0
+    Dim writtenCount As Long: writtenCount = 0
 
-    ' --- Begin main write loop ---
     For i = 1 To rows.Count
-        logger.Info "Processing row " & i & " of " & rows.Count
         Set rowArr = rows(i)
-        idx = 1
+        dowwntimeType = LCase$(rowArr("SectionType"))
+        lineName = LCase$(rowArr("Line"))
 
-        On Error Resume Next
-        lineName = Trim$(CStr(rowArr(UBound(rowArr) - 2)))
-        On Error GoTo ERR_HANDLER
+        If dowwntimeType = "breakdown" Then
+            Set activeMap = breakdownColMap
+            rowArr("total") = rowArr("duration of downtime")
 
-        logger.Info "Line detected: " & lineName
+            If LCase$(Left$(rowArr("product"), 5)) = "error" Then
+                rowArr("product") = ""
+            End If
 
-        If LCase$(lineName) Like "*jointing*" Or LCase$(lineName) = "line 4" Then
-            Set activeMap = config.GetLineProductionMap("Line 4")
-            logger.Info "Using Line 4 mapping."
         Else
-            Set activeMap = defaultColMap
-            logger.Info "Using default mapping."
+            ' Downtime
+            If (lineName Like "*jointing*") Or (lineName = "line 4") Then
+                Set activeMap = config.GetLineProductionMap("Line 4")
+            Else
+                Set activeMap = defaultColMap
+            End If
+
         End If
 
-        ' --- Write mapped fields ---
+
+        Set newRow = tbl.ListRows.Add
+
         For Each key In activeMap.Keys
             dstCol = CStr(activeMap(key))
-            logger.Info "Writing field '" & key & "' to column " & dstCol & _
-                        " (value=" & CStr(rowArr(idx)) & ")"
-            masterWS.Cells(lastRowDst, Utils.ColLetterToNum(dstCol)).Value = rowArr(idx)
-            idx = idx + 1
+            masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(dstCol)).Value = rowArr(LCase$(key))
         Next key
 
-        ' --- Write metadata ---
-        logger.Info "Writing metadata fields..."
-        masterWS.Cells(lastRowDst, Utils.ColLetterToNum(DEST_DATE_COL)).Value = rowArr(idx): idx = idx + 1
-        masterWS.Cells(lastRowDst, Utils.ColLetterToNum(DEST_LINE_COL)).Value = rowArr(idx): idx = idx + 1
-        masterWS.Cells(lastRowDst, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = rowArr(idx)
+      
+        masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_DATE_COL)).Value = rowArr("Date")
+        masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_LINE_COL)).Value = rowArr("Line")
+        masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = rowArr("Shift")
 
-        logger.Info "Completed writing row " & i & " to master (targetRow=" & lastRowDst & ")"
+        machineCol = Utils.ColLetterToNum("R")
+        maintCol = Utils.ColLetterToNum("Q")    
 
-        lastRowDst = lastRowDst + 1
+        If Trim(masterWS.Cells(newRow.Range.Row, machineCol).Value) = "" Then
+            masterWS.Cells(newRow.Range.Row, maintCol).Value = "Production"
+        Else
+            masterWS.Cells(newRow.Range.Row, maintCol).Value = "Maintenance"
+        End If
+
         writtenCount = writtenCount + 1
     Next i
 
-    logger.Success "Wrote " & writtenCount & " downtime rows to master successfully."
 
 CLEANUP:
     On Error Resume Next
+    masterWB.Close SaveChanges:=True
     Application.ScreenUpdating = True
     Application.Calculation = xlCalculationAutomatic
     Application.EnableEvents = True
-
-    If Not masterWB Is Nothing Then
-        logger.Info "Saving and closing master workbook..."
-        masterWB.Close SaveChanges:=True
-    End If
-
-    Set masterWS = Nothing
-    Set masterWB = Nothing
-
-    logger.Info "WriteToMaster() finished normally."
+    Set masterWS = Nothing: Set masterWB = Nothing
     Exit Sub
 
 ERR_HANDLER:
-    logger.Error "Runtime error " & Err.Number & " (" & Err.Description & _
-                 ") occurred in ReadYEDowntime.WriteToMaster at line " & Erl & _
-                 ". LastRowDst=" & lastRowDst & ", idx=" & idx & ", key=" & key
+    logger.Error "Runtime error " & Err.Number & " (" & Err.Description & ") in WriteToMaster"
     errHandler.HandleError "ReadYEDowntime", "WriteToMaster", Erl
     Resume CLEANUP
+
 End Sub
+
+
+Private Function FindSectionEnd(ws As Worksheet, startRow As Long, col As String, lastRow As Long) As Long
+    Dim r As Long, v As Variant
+    FindSectionEnd = lastRow
+    For r = startRow To lastRow
+        v = Trim(LCase(ws.Cells(r, col).MergeArea.Cells(1, 1).Value))
+        If v = "" Or v = "0" Then
+            FindSectionEnd = r - 1
+            Exit For
+        End If
+    Next r
+End Function
+
+Private Function DictToString(ByVal d As Object) As String
+    Dim k As Variant, output As String
+    For Each k In d.Keys
+        output = output & k & "=" & CStr(d(k)) & "; "
+    Next k
+    If Len(output) > 2 Then output = Left(output, Len(output) - 2)
+    DictToString = output
+End Function
+
+
+
 
