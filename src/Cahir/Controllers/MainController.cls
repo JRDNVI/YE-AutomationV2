@@ -60,20 +60,16 @@ Public Sub RunImport()
 
     logger.Info "Creating deployed XLSM version..."
 
-    On Error Resume Next
-    Kill newPath
-    On Error GoTo 0
+    Dim wbSrc As Workbook
+    Application.DisplayAlerts = False 
 
-    Dim wbCopy As Workbook 
-    Set wbCopy = Workbooks.Open(masterPath, ReadOnly:=False)
+    Set wbSrc = Workbooks.Open(masterPath, ReadOnly:=False)
+    wbSrc.SaveAs Filename:=newPath, FileFormat:=xlOpenXMLWorkbookMacroEnabled
+    wbSrc.Close SaveChanges:=True
 
-
-    wbCopy.SaveAs Filename:=newPath, FileFormat:=xlOpenXMLWorkbookMacroEnabled
-
-    wbCopy.Close SaveChanges:=True
+    Application.DisplayAlerts = True 
 
     logger.Success "Deployment copy created: " & newPath
-
 
     state.RestoreAll
     logger.Info "Excel state restored to normal."

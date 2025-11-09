@@ -56,6 +56,16 @@ $latestLog = Get-ChildItem -Path $logFolder -Filter *.txt |
              Sort-Object LastWriteTime -Descending | 
              Select-Object -First 1
 
+Write-Host "[INFO] Closing orphaned Excel instances..." -ForegroundColor Cyan
+
+Get-Process excel -ErrorAction SilentlyContinue | ForEach-Object {
+    try { $_.CloseMainWindow() | Out-Null } catch {}
+    Start-Sleep -Milliseconds 300
+    try { $_.Kill() } catch {}
+}
+Start-Sleep -Seconds 1
+
+
 if ($latestLog) {
     Write-Host "`nOpening latest log: $($latestLog.Name)"
     Invoke-Item $latestLog.FullName
