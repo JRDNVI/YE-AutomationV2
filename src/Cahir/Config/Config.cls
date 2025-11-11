@@ -16,12 +16,12 @@ Option Explicit
 ' "\\Oak-w2k22-dc01\Department\Supervisor\"
 ' C:\Users\coadyj\projects\YE-AutomationV2\Logs\
 
-Private Const MASTER_FILE As String = "D:\project\OakPark-Data-YE\Master-Data\Yields and Efficiencies 2025 - Cahir.xlsb"
-Private Const MASTER_DOWNTIME_FILE As String = "D:\project\OakPark-Data-YE\Master-Data\Downtime Master File 2025 (New).xlsx"
-Private Const SUPERVISOR_ROOT As String = "D:\project\OakPark-Data-YE\supervisor\"
-Private Const LOG_FOLDER As String = "D:\project\YE-AutomationV2\Logs" 
-Private Const TARGET_DAY As Long = 9
-Private Const TARGET_MONTH As Long = 10
+Private Const MASTER_FILE As String = "\\Oak-w2k22-dc01\Department\Production\Production\Yields\2025\Yields and Efficiencies 2025 - Cahir.xlsb"
+Private Const MASTER_DOWNTIME_FILE As String = "\\Oak-w2k22-dc01\Department\Production\Production\Yields\2025\Downtime Master File 2025 (New).xlsx"
+Private Const SUPERVISOR_ROOT As String = "\\Oak-w2k22-dc01\Department\Supervisor\"
+Private Const LOG_FOLDER As String = "C:\Users\coadyj\projects\YE-AutomationV2\Logs\" 
+Private Const TARGET_DAY As Long = 6
+Private Const TARGET_MONTH As Long = 11
 Private Const TARGET_YEAR As Long = 2025
 
 Private Shifts As Variant
@@ -48,7 +48,7 @@ private PivotTableNames As Object
 Private Sub Class_Initialize()
 
     CuringPrefixes = Array("Smoking & Heat Treating Day By Hour Sheet", "Thermo Day By Hour Sheet.")
-    Shifts = Array("Day Shift", "Night Shift")
+    Shifts = Array("Day Shift Yield & Efficiency", "Night Shift Yield & Efficiency")
     Lines = Array("Line 1", "Line 2 & 3", "Line 4")
 
     Set LineOne = CreateObject("Scripting.Dictionary")

@@ -31,7 +31,7 @@ Public Sub UpdateAllPivotTables(ByVal masterSlicingPath As String, _
 
         ' Print all Pivot fields, to see why thermo isn't updating 
 
-        pivts = pivotTableNames(sheetName) ' this is an array
+        pivts = pivotTableNames(sheetName) 
         For i = LBound(pivts) To UBound(pivts)
             Set pt = Nothing
             On Error Resume Next
@@ -54,7 +54,6 @@ NextSheet:
 
     wb.Close SaveChanges:=True
 
-    ' --- Downtime workbook
     Set wb = Workbooks.Open(masterDowntimePath, UpdateLinks:=0, ReadOnly:=False)
     On Error Resume Next
     Set ws = wb.Sheets("Report Summary")

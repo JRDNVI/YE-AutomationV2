@@ -113,12 +113,12 @@ NEXT_LINE:
     Next lineName
 
     ' Write yield data
-    If allYERows.Count > 0 Then
-        yeHelper.WriteToMaster allYERows, masterPath, config.GetLineMap("Line 1")
-        logger.Success "Wrote " & allYERows.Count & " yield rows to master."
-    Else
-        logger.Warn "No yield data collected from any line or shift."
-    End If
+    'If allYERows.Count > 0 Then
+        'yeHelper.WriteToMaster allYERows, masterPath, config.GetLineMap("Line 1")
+        'logger.Success "Wrote " & allYERows.Count & " yield rows to master."
+    'Else
+        'logger.Warn "No yield data collected from any line or shift."
+    'End If
 
     ' Write downtime data
     If allDowntimeRows.Count > 0 Then

@@ -61,7 +61,9 @@ Public Function ReadDowntime(ByVal filePath As String, _
 
     ' Find first, second, third "Product" header in Column C
     For r = 1 To lastRow
-        valCheck = Trim(LCase(ws.Cells(r, "C").MergeArea.Cells(1, 1).Value))
+        valCheck = CStr(ws.Cells(r, "C").MergeArea.Cells(1, 1).Value & "")
+        valCheck = Trim(LCase(valCheck))
+
         If valCheck = "product" Then
             count = count + 1
             If count <= 3 Then productRows(count) = r

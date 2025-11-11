@@ -60,14 +60,12 @@ Public Sub RunImport()
 
     logger.Info "Creating deployed XLSM version..."
 
-    Dim wbSrc As Workbook
-    Application.DisplayAlerts = False 
-
-    Set wbSrc = Workbooks.Open(masterPath, ReadOnly:=False)
-    wbSrc.SaveAs Filename:=newPath, FileFormat:=xlOpenXMLWorkbookMacroEnabled
-    wbSrc.Close SaveChanges:=True
-
-    Application.DisplayAlerts = True 
+    'Dim wbSrc As Workbook
+    'Application.DisplayAlerts = False 
+    'Set wbSrc = Workbooks.Open(masterPath, ReadOnly:=False)
+    'wbSrc.SaveAs Filename:=newPath, FileFormat:=xlOpenXMLWorkbookMacroEnabled
+    'wbSrc.Close SaveChanges:=True
+    'Application.DisplayAlerts = True 
 
     logger.Success "Deployment copy created: " & newPath
 

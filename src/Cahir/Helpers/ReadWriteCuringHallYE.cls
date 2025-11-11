@@ -83,7 +83,11 @@ Private Sub WriteThermoToMaster(ByVal dataList As Collection, _
     For Each dataRow In dataList
         With ws
             .Range("A" & nextRow).Value = targetDate
-            .Range("C" & nextRow).Value = "Days"
+            If shiftName = "Day Shift Yield & Efficiency" Then
+                .Range("C" & nextRow).Value = "Days"
+            Else 
+                .Range("C" & nextRow).Value = "Nights"
+            End If
 
             ' Map each value to its target column
             For c = LBound(colMap) To UBound(colMap)

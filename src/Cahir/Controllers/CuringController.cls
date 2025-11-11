@@ -50,8 +50,8 @@ Public Sub Run()
     For Each shift In shifts
         For Each prefix In curingPrefixes
             folder = rootPath & shift & "\Curing Hall\" & yr & "\" & mn & "\"
-
             fileName = GetLatestCuringFile(folder, targetDate, CStr(prefix))
+
             If Len(fileName) = 0 Then
                 logger.Warn "No file found for " & CStr(prefix) & " in " & folder
             Else
@@ -80,27 +80,44 @@ Private Function GetLatestCuringFile(ByVal folder As String, _
 
     Dim f As String, fullPath As String
     Dim expectedLong As String, expectedShort As String
+    Dim fallbackNameLong As String, fallbackNameShort As String
     Dim clean As String
 
     If Right$(folder, 1) <> "\" Then folder = folder & "\"
+
     expectedLong = Format$(targetDate, "dd.mm.yyyy")
     expectedShort = Format$(targetDate, "dd.mm.yy")
+
+    fallbackNameLong = folder & expectedLong & ".xlsx"
+    fallbackNameShort = folder & expectedShort & ".xlsx"
 
     f = Dir(folder & "*.xls*")
     Do While Len(f) > 0
         If Left$(f, 2) <> "~$" And InStr(1, f, "backup", vbTextCompare) = 0 Then
+            
             clean = UCase$(Replace$(Replace$(f, "_", " "), "  ", " "))
             clean = Trim$(Replace$(clean, "  ", " "))
+            
             If Left$(clean, Len(prefix)) = UCase$(prefix) _
                And (InStr(1, clean, expectedLong, vbTextCompare) > 0 _
                 Or InStr(1, clean, expectedShort, vbTextCompare) > 0) Then
-                fullPath = folder & f
-                GetLatestCuringFile = fullPath
-                Exit Function
+                    GetLatestCuringFile = folder & f
+                    Exit Function
             End If
         End If
+
         f = Dir
     Loop
+
+    If Len(Dir(fallbackNameLong)) > 0 Then
+        GetLatestCuringFile = fallbackNameLong
+        Exit Function
+    End If
+
+    If Len(Dir(fallbackNameShort)) > 0 Then
+        GetLatestCuringFile = fallbackNameShort
+        Exit Function
+    End If
 
     GetLatestCuringFile = ""
     Exit Function

@@ -2,9 +2,9 @@
 # Run-Import.ps1  –  Dynamic VBA Loader + Live Log Streamer
 # ==============================================================
 
-$srcPath   =  "D:\project\YE-AutomationV2\src"
-$tempDir   =  "D:\project\YE-AutomationV2\Temp"
-$logFolder = "D:\project\YE-AutomationV2\Logs"
+$srcPath   =  "C:\Users\coadyj\projects\YE-AutomationV2\src"
+$tempDir   =  "C:\Users\coadyj\projects\YE-AutomationV2\Temp"
+$logFolder = "C:\Users\coadyj\projects\YE-AutomationV2\Logs"
 $macroName = "ImportDailyYEData"
 
 if (-not (Test-Path $tempDir)) { New-Item -ItemType Directory -Path $tempDir | Out-Null }
@@ -63,6 +63,7 @@ Get-Process excel -ErrorAction SilentlyContinue | ForEach-Object {
     Start-Sleep -Milliseconds 300
     try { $_.Kill() } catch {}
 }
+
 Start-Sleep -Seconds 1
 
 
