@@ -59,7 +59,7 @@ Public Sub Run()
                 If InStr(1, UCase$(prefix), "THERMO", vbTextCompare) > 0 Then
                     curingHelper.ReadThermoData fileName, masterPath, CStr(shift), thermoColMap, targetDate, logger
                 Else
-                    curingHelper.ReadSmokingData fileName, masterPath, CStr(shift), smokingColMap, targetDate, logger
+                    curingHelper.ReadSmokingData fileName, masterPath, CStr(shift), smokingColMap, targetDate, config.GetSmokeProductConversions, logger
                 End If
             End If
         Next prefix

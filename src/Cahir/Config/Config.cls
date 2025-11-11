@@ -45,6 +45,8 @@ private LineFourBreakdown As Object
 
 private PivotTableNames As Object
 
+private SmokeProductConversions As Object
+
 Private Sub Class_Initialize()
 
     CuringPrefixes = Array("Smoking & Heat Treating Day By Hour Sheet", "Thermo Day By Hour Sheet.")
@@ -155,7 +157,7 @@ Private Sub Class_Initialize()
         .Add "Machine", "R"
         .Add "Duration of Downtime", "O"
         .Add "Description of Downtime", "S"
-    end with
+    End with
 
     with LineTwoThreeBreakdown
         .Add "Product Code", "C"
@@ -164,7 +166,7 @@ Private Sub Class_Initialize()
         .Add "Machine", "R"
         .Add "Duration of Downtime", "O"
         .Add "Description of Downtime", "S"
-    end with
+    End with
 
     with LineFourBreakdown
         .Add "Product Code", "C"
@@ -173,7 +175,21 @@ Private Sub Class_Initialize()
         .Add "Machine", "R"
         .Add "Duration of Downtime", "O"
         .Add "Description of Downtime", "S"
-    end with
+    End with
+
+    Set SmokeProductConversions = CreateObject("Scripting.Dictionary")
+
+    with SmokeProductConversions
+        .Add "Bellies BB", "(BB) BELLIES - SMOKED LYONARA"
+        .Add "Bellies EU", "(EU) BELLIES - SMOKED LYONARA"
+        .Add "Eye Loins BB", "(BB) EYE LOINS - SMOKED LYONARA"
+        .Add "Eye Loins EU", "(EU) EYE LOINS - SMOKED SWEET CURE LYONARA"
+        .Add "Consumers BB", "(BB) CONSUMERS - SMOKED LYONARA"
+        .Add "Backs BB", "(BB) BACKS - SMOKED LYONARA"
+        .Add "Backs EU", "(EU) BACKS - SMOKED LYONARA"
+        .Add "Trim BB", "(BB) BACON TRIM - SMOKED LYONARA"
+        .Add "Trim EU", "(EU) BACON TRIM - SMOKED LYONARA"
+    End With 
 
     ThermoColumns = Array( _ 
         Array("C", "H"), _
@@ -261,6 +277,10 @@ End Property
 
 Public Property Get GetSmokingColumns() As Variant
     GetSmokingColumns = SmokingColumns
+End Property
+
+Public Property Get GetSmokeProductConversions() As Object
+    Set GetSmokeProductConversions = SmokeProductConversions
 End Property
 
 

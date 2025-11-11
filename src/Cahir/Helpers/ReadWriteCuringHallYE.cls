@@ -2,6 +2,7 @@ VERSION 1.0 CLASS
 BEGIN
   MultiUse = -1 
 END
+
 Attribute VB_Name = "ReadWriteCuringHallYE"
 Option Explicit
 
@@ -10,7 +11,6 @@ Private Const TARGET_SHEET As String = "Thermoforming"
 
 Private Const START_ROW_SMOKE As Long = 6
 Private Const TARGET_SHEET_SMOKE As String = "Smoking Yield & Efficiency"
-
 
 Public Sub ReadThermoData(ByVal sourcePath As String, _
                           ByVal masterPath As String, _
@@ -89,7 +89,6 @@ Private Sub WriteThermoToMaster(ByVal dataList As Collection, _
                 .Range("C" & nextRow).Value = "Nights"
             End If
 
-            ' Map each value to its target column
             For c = LBound(colMap) To UBound(colMap)
                 .Range(colMap(c)(1) & nextRow).Value = dataRow(c)
             Next c
@@ -114,6 +113,7 @@ Public Sub ReadSmokingData(ByVal sourcePath As String, _
                            ByVal shiftName As String, _
                            ByVal colMap As Variant, _
                            ByVal targetDate As Date, _
+                           Byval productConversions As Object, _
                            ByRef logger As LogHelper)
 
     Dim wb As Workbook, ws As Worksheet
@@ -142,11 +142,32 @@ Public Sub ReadSmokingData(ByVal sourcePath As String, _
         If Trim(cVal & "") = "" Then Exit Do
         If IsNumeric(cVal) And cVal = 0 Then Exit Do
 
-        ReDim tempRow(LBound(colMap) To UBound(colMap))
-        For c = LBound(colMap) To UBound(colMap)
-            tempRow(c) = ws.Range(colMap(c)(0) & i).Value
-        Next c
-        dataList.Add tempRow
+    ReDim tempRow(LBound(colMap) To UBound(colMap))
+
+    For c = LBound(colMap) To UBound(colMap)
+
+        Dim rawValue As String
+        rawValue = Trim$(ws.Range(colMap(c)(0) & i).Value & "")
+
+        If UCase$(colMap(c)(0)) = "E" And UCase$(rawValue) = "SMOKING" Then
+            tempRow(c) = "Smoke"
+
+        ElseIf UCase$(colMap(c)(0)) = "B" Then
+        
+            If productConversions.Exists(rawValue) Then
+                tempRow(c) = productConversions(rawValue)
+            Else
+                tempRow(c) = rawValue   
+            End If
+
+        Else
+            tempRow(c) = rawValue
+        End If
+
+    Next c
+
+    dataList.Add tempRow
+
 
         i = i + 1
         If i > 2000 Then Exit Do 
@@ -188,10 +209,10 @@ Private Sub WriteSmokingToMaster(ByVal dataList As Collection, _
         With ws
             .Range("A" & nextRow).Value = targetDate
 
-            Select Case LCase$(shiftName)
-                Case "day shift":   .Range("D" & nextRow).Value = "Days"
-                Case "night shift": .Range("D" & nextRow).Value = "Evenings"
-                Case Else:          .Range("D" & nextRow).Value = shiftName
+            Select Case (shiftName)
+                Case "Day Shift Yield & Efficiency":   .Range("D" & nextRow).Value = "Days"
+                Case "Night Shift Yield & Efficiency": .Range("D" & nextRow).Value = "Evenings"
+                Case Else:                             .Range("D" & nextRow).Value = shiftName
             End Select
 
             For c = LBound(colMap) To UBound(colMap)
