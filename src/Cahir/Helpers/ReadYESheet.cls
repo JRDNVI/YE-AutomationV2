@@ -41,6 +41,10 @@ Public Function ReadSupervisorData(ByVal filePath As String, _
     Dim dataList As New Collection
     Dim supervisor As String
 
+    Dim qaLogPath As String
+        qaLogPath = config.GetPath("log_folder") & "DataQuality_" & Format(Now(), "yyyymmdd_hhnnss") & ".txt"
+
+
     Const DATA_START_ROW As Long = 9
     Const SUPERVISOR_CELL As String = "J7"
     Const END_MARKER_COL As String = "I"
@@ -82,14 +86,25 @@ Public Function ReadSupervisorData(ByVal filePath As String, _
 
         For Each key In colMap.Keys
             Dim srcCol As String
+            Dim rawVal As Variant
+
             srcCol = Utils.FindColumnByHeader(ws, key)
+
             If srcCol <> "" Then
-                tempRow(idx) = ws.Range(srcCol & i).Value
+                rawVal = ws.Range(srcCol & i).Value
+                tempRow(idx) = rawVal
+
+                If IsError(rawVal) Or Trim$(CStr(rawVal & "")) = "" Then
+                    Call LogDataQualityIssue(qaLogPath, filePath, lineName, shiftName, key, srcCol, i, rawVal)
+                End If
             Else
                 tempRow(idx) = ""
+                Call LogDataQualityIssue(qaLogPath, filePath, lineName, shiftName, key, "(No Column Found)", i, "(Missing Column)")
             End If
+
             idx = idx + 1
         Next key
+
      
         Call Utils.NormaliseLineAndShift(lineName, shiftName)
    
@@ -191,4 +206,25 @@ CLEANUP:
 ERR_HANDLER:
     errHandler.HandleError "ReadYESheet", "WriteToMaster", Erl
     Resume CLEANUP
+End Sub
+
+Private Sub LogDataQualityIssue(ByVal logPath As String, _
+                                ByVal filePath As String, _
+                                ByVal lineName As String, _
+                                ByVal shiftName As String, _
+                                ByVal fieldName As String, _
+                                ByVal srcCol As String, _
+                                ByVal rowNum As Long, _
+                                ByVal value As Variant)
+
+    Dim f As Integer: f = FreeFile
+    Open logPath For Append As #f
+    Print #f, "[" & Format(Now(), "yyyy-mm-dd hh:nn:ss") & "] Missing/Invalid Field:"
+    Print #f, "  File: " & filePath
+    Print #f, "  Line: " & lineName & " | Shift: " & shiftName
+    Print #f, "  Field: " & fieldName & " (Column " & srcCol & ")"
+    Print #f, "  Row: " & rowNum
+    Print #f, "  Value: " & CStr(value)
+    Print #f, String(60, "-")
+    Close #f
 End Sub
