@@ -59,10 +59,19 @@ Public Function ReadDowntime(ByVal filePath As String, _
     Dim productRows(1 To 3) As Long
     Dim count As Long: count = 0
 
-    ' Find first, second, third "Product" header in Column C
+' Find first, second, third "Product" in Column C
+    Dim v As Variant
     For r = 1 To lastRow
-        valCheck = CStr(ws.Cells(r, "C").MergeArea.Cells(1, 1).Value & "")
-        valCheck = Trim(LCase(valCheck))
+        If r = 64 Then LogCellDebug ws, r, "C", filePath
+
+        v = ws.Cells(r, "C").MergeArea.Cells(1, 1).Value2
+        If IsError(v) Then
+            logger.Warn "Excel error in " & ws.Cells(r, "C").Address(0,0) & _
+                        " (ErrCode=" & CStr(v) & ") in " & Mid(filePath, InStrRev(filePath, "\") + 1)
+            valCheck = ""
+        Else
+            valCheck = SafeLowerText(ws.Cells(r, "C"))
+        End If
 
         If valCheck = "product" Then
             count = count + 1
@@ -282,8 +291,16 @@ Public Sub WriteToMaster(ByRef rows As Collection, _
             .NumberFormat = "dd/mm/yyyy"
         End With
         
+        
         masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_LINE_COL)).Value = rowArr("Line")
-        masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = rowArr("Shift")
+
+        If rowArr("Shift") = "Day Shift Yield & Efficiency" Then 
+            masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = "Days"
+        ElseIf rowArr("Shift") = "Night Shift Yield & Efficiency" Then 
+            masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = "Nights"
+        Else 
+            masterWS.Cells(newRow.Range.Row, Utils.ColLetterToNum(DEST_SHIFT_COL)).Value = rowArr("Shift")
+        End If
 
         machineCol = Utils.ColLetterToNum("R")
         maintCol = Utils.ColLetterToNum("Q")    
@@ -320,7 +337,7 @@ Private Function FindSectionEnd(ws As Worksheet, startRow As Long, col As String
     FindSectionEnd = lastRow
     For r = startRow To lastRow
         v = Trim(LCase(ws.Cells(r, col).MergeArea.Cells(1, 1).Value))
-        If v = "" Or v = "0" Then
+        If IsError(v) or v = "" Or v = "0"  Then
             FindSectionEnd = r - 1
             Exit For
         End If
@@ -335,6 +352,33 @@ Private Function DictToString(ByVal d As Object) As String
     If Len(output) > 2 Then output = Left(output, Len(output) - 2)
     DictToString = output
 End Function
+
+    ' --- Put inside ReadYEDowntime class ---
+Private Function SafeLowerText(ByVal rng As Range) As String
+    Dim v As Variant
+    v = rng.MergeArea.Cells(1, 1).Value2
+    If IsError(v) Then
+        SafeLowerText = ""
+    ElseIf IsEmpty(v) Then
+        SafeLowerText = ""
+    Else
+        SafeLowerText = LCase$(Trim$(CStr(v)))
+    End If
+End Function
+
+Private Sub LogCellDebug(ByVal ws As Worksheet, ByVal r As Long, ByVal col As String, ByVal filePath As String)
+    On Error Resume Next
+    Dim rg As Range: Set rg = ws.Cells(r, col).MergeArea.Cells(1, 1)
+    Dim v As Variant: v = rg.Value2
+    Dim t As String: t = rg.Text           ' Text is always a String
+    Dim tn As String: tn = TypeName(v)     ' e.g. "Error", "String", "Double", "Empty"
+    Dim ev As String
+    If IsError(v) Then ev = " (ErrCode=" & CStr(v) & ")"
+    logger.Info "ScanC: row=" & r & ", addr=" & rg.Address(0,0) & _
+                ", Type=" & tn & ev & ", Text=""" & t & """ in " & _
+                Mid(filePath, InStrRev(filePath, "\") + 1)
+End Sub
+
 
 
 
